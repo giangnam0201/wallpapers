@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="pcbBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a14"/>
+      <stop offset="100%" style="stop-color:#0d1520"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#pcbBg)"/>
+  <!-- Circuit traces -->
+  <g stroke="#00b4d8" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M100,200 H400 V400 H600 V200 H900"/>
+    <path d="M200,500 H500 V700 H800 V500 H1100"/>
+    <path d="M1000,100 V300 H1200 V500 H1400 V300 H1600"/>
+    <path d="M300,800 H600 V600 H900 V800 H1200"/>
+    <path d="M1300,700 H1600 V900 H1800"/>
+    <path d="M50,400 H200 V600 H350"/>
+    <path d="M1500,200 H1700 V400 H1900"/>
+    <path d="M700,100 V250 H950 V100"/>
+    <path d="M1100,600 V800 H1350 V950"/>
+    <path d="M150,900 H400 V750 H550"/>
+  </g>
+  <!-- Circuit nodes -->
+  <g fill="#00b4d8">
+    <circle cx="400" cy="200" r="6" opacity="0.8"/>
+    <circle cx="600" cy="400" r="6" opacity="0.8"/>
+    <circle cx="900" cy="200" r="6" opacity="0.8"/>
+    <circle cx="500" cy="500" r="6" opacity="0.8"/>
+    <circle cx="800" cy="700" r="6" opacity="0.8"/>
+    <circle cx="1100" cy="500" r="6" opacity="0.8"/>
+    <circle cx="1200" cy="300" r="6" opacity="0.8"/>
+    <circle cx="1400" cy="500" r="6" opacity="0.8"/>
+    <circle cx="1600" cy="300" r="6" opacity="0.8"/>
+    <circle cx="1600" cy="700" r="6" opacity="0.8"/>
+    <circle cx="600" cy="600" r="6" opacity="0.8"/>
+    <circle cx="900" cy="800" r="6" opacity="0.8"/>
+  </g>
+  <!-- IC chips -->
+  <g>
+    <rect x="380" y="350" width="80" height="50" rx="4" fill="#1a2740" stroke="#00b4d8" stroke-width="1.5"/>
+    <rect x="1080" y="250" width="80" height="50" rx="4" fill="#1a2740" stroke="#00b4d8" stroke-width="1.5"/>
+    <rect x="700" y="450" width="100" height="60" rx="4" fill="#1a2740" stroke="#00b4d8" stroke-width="1.5"/>
+    <rect x="1400" y="600" width="80" height="50" rx="4" fill="#1a2740" stroke="#00b4d8" stroke-width="1.5"/>
+    <rect x="250" y="700" width="80" height="50" rx="4" fill="#1a2740" stroke="#00b4d8" stroke-width="1.5"/>
+  </g>
+  <!-- Glow effects -->
+  <g fill="#00b4d8" opacity="0.3">
+    <circle cx="420" cy="375" r="25"/>
+    <circle cx="1120" cy="275" r="25"/>
+    <circle cx="750" cy="480" r="30"/>
+    <circle cx="1440" cy="625" r="25"/>
+  </g>
+  <!-- Secondary traces -->
+  <g stroke="#7c3aed" stroke-width="1.5" fill="none" opacity="0.4">
+    <path d="M100,100 H300 V300 H500"/>
+    <path d="M1200,800 H1500 V600"/>
+    <path d="M800,300 H1050 V150"/>
+    <path d="M400,900 V750 H650"/>
+    <path d="M1600,100 V250 H1800 V400"/>
+  </g>
+</svg>

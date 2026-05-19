@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="flowGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.6"/>
+    </linearGradient>
+    <linearGradient id="flowGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="#0a0a14"/>
+  <!-- Flow shapes -->
+  <path d="M-100,600 Q300,200 700,500 Q1100,800 1500,400 Q1900,0 2100,300" fill="none" stroke="url(#flowGrad1)" stroke-width="3" opacity="0.7"/>
+  <path d="M-100,700 Q300,300 700,600 Q1100,900 1500,500 Q1900,100 2100,400" fill="none" stroke="url(#flowGrad1)" stroke-width="2" opacity="0.5"/>
+  <path d="M-100,800 Q300,400 700,700 Q1100,1000 1500,600 Q1900,200 2100,500" fill="none" stroke="url(#flowGrad1)" stroke-width="1.5" opacity="0.3"/>
+  <path d="M-100,400 Q400,700 800,300 Q1200,0 1600,400 Q2000,800 2100,500" fill="none" stroke="url(#flowGrad2)" stroke-width="3" opacity="0.6"/>
+  <path d="M-100,300 Q400,600 800,200 Q1200,-100 1600,300 Q2000,700 2100,400" fill="none" stroke="url(#flowGrad2)" stroke-width="2" opacity="0.4"/>
+  <path d="M-100,200 Q400,500 800,100 Q1200,-200 1600,200 Q2000,600 2100,300" fill="none" stroke="url(#flowGrad2)" stroke-width="1.5" opacity="0.2"/>
+</svg>

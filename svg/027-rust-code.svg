@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#1a1b26"/>
+  <!-- Rust gear logo abstract -->
+  <circle cx="960" cy="540" r="350" fill="none" stroke="#f74c00" stroke-width="1" opacity="0.1"/>
+  <circle cx="960" cy="540" r="300" fill="none" stroke="#f74c00" stroke-width="1" opacity="0.08"/>
+  <!-- Code overlay -->
+  <g font-family="monospace" font-size="15">
+    <text x="400" y="200" fill="#7aa2f7">use</text><text x="430" y="200" fill="#c0caf5"> std::collections::HashMap;</text>
+    <text x="400" y="230" fill="#7aa2f7">use</text><text x="430" y="230" fill="#c0caf5"> tokio::sync::RwLock;</text>
+    <text x="400" y="290" fill="#bb9af7">#[derive(Debug, Clone)]</text>
+    <text x="400" y="320" fill="#7aa2f7">pub struct</text><text x="500" y="320" fill="#2ac3de"> Cache</text><text x="550" y="320" fill="#c0caf5">&lt;T&gt; {</text>
+    <text x="430" y="350" fill="#c0caf5">store: RwLock&lt;HashMap&lt;String, T&gt;&gt;,</text>
+    <text x="430" y="380" fill="#c0caf5">capacity: </text><text x="530" y="380" fill="#2ac3de">usize</text><text x="580" y="380" fill="#c0caf5">,</text>
+    <text x="430" y="410" fill="#c0caf5">ttl: </text><text x="470" y="410" fill="#2ac3de">Duration</text><text x="550" y="410" fill="#c0caf5">,</text>
+    <text x="400" y="440" fill="#c0caf5">}</text>
+    <text x="400" y="500" fill="#7aa2f7">impl</text><text x="440" y="500" fill="#c0caf5">&lt;T: Clone + Send + Sync&gt; Cache&lt;T&gt; {</text>
+    <text x="430" y="530" fill="#7aa2f7">pub async fn</text><text x="560" y="530" fill="#e0af68"> get</text><text x="590" y="530" fill="#c0caf5">(&amp;self, key: &amp;</text><text x="750" y="530" fill="#2ac3de">str</text><text x="780" y="530" fill="#c0caf5">) -&gt; Option&lt;T&gt; {</text>
+    <text x="460" y="560" fill="#7aa2f7">let</text><text x="490" y="560" fill="#c0caf5"> store = self.store.read().await;</text>
+    <text x="460" y="590" fill="#c0caf5">store.get(key).cloned()</text>
+    <text x="430" y="620" fill="#c0caf5">}</text>
+    <text x="430" y="680" fill="#7aa2f7">pub async fn</text><text x="560" y="680" fill="#e0af68"> set</text><text x="590" y="680" fill="#c0caf5">(&amp;self, key: String, value: T) {</text>
+    <text x="460" y="710" fill="#7aa2f7">let mut</text><text x="520" y="710" fill="#c0caf5"> store = self.store.write().await;</text>
+    <text x="460" y="740" fill="#7aa2f7">if</text><text x="480" y="740" fill="#c0caf5"> store.len() &gt;= self.capacity {</text>
+    <text x="490" y="770" fill="#c0caf5">self.evict(&amp;</text><text x="610" y="770" fill="#7aa2f7">mut</text><text x="640" y="770" fill="#c0caf5"> store).await;</text>
+    <text x="460" y="800" fill="#c0caf5">}</text>
+    <text x="460" y="830" fill="#c0caf5">store.insert(key, value);</text>
+    <text x="430" y="860" fill="#c0caf5">}</text>
+    <text x="400" y="890" fill="#c0caf5">}</text>
+  </g>
+</svg>

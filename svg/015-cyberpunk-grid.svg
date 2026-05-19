@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="cyberBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a001a"/>
+      <stop offset="50%" style="stop-color:#1a0033"/>
+      <stop offset="100%" style="stop-color:#0a001a"/>
+    </linearGradient>
+    <linearGradient id="gridFade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff00ff;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#ff00ff;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#cyberBg)"/>
+  <!-- Perspective grid -->
+  <g stroke="#ff00ff" stroke-width="0.5" opacity="0.4">
+    <!-- Horizontal lines with perspective -->
+    <line x1="0" y1="540" x2="1920" y2="540"/>
+    <line x1="0" y1="570" x2="1920" y2="570"/><line x1="0" y1="510" x2="1920" y2="510"/>
+    <line x1="0" y1="610" x2="1920" y2="610"/><line x1="0" y1="470" x2="1920" y2="470"/>
+    <line x1="0" y1="660" x2="1920" y2="660"/><line x1="0" y1="420" x2="1920" y2="420"/>
+    <line x1="0" y1="720" x2="1920" y2="720"/><line x1="0" y1="360" x2="1920" y2="360"/>
+    <line x1="0" y1="800" x2="1920" y2="800"/><line x1="0" y1="280" x2="1920" y2="280"/>
+    <line x1="0" y1="900" x2="1920" y2="900"/><line x1="0" y1="180" x2="1920" y2="180"/>
+    <line x1="0" y1="1020" x2="1920" y2="1020"/><line x1="0" y1="60" x2="1920" y2="60"/>
+    <!-- Vertical lines -->
+    <line x1="960" y1="0" x2="960" y2="1080"/>
+    <line x1="860" y1="0" x2="860" y2="1080"/><line x1="1060" y1="0" x2="1060" y2="1080"/>
+    <line x1="760" y1="0" x2="760" y2="1080"/><line x1="1160" y1="0" x2="1160" y2="1080"/>
+    <line x1="660" y1="0" x2="660" y2="1080"/><line x1="1260" y1="0" x2="1260" y2="1080"/>
+    <line x1="560" y1="0" x2="560" y2="1080"/><line x1="1360" y1="0" x2="1360" y2="1080"/>
+    <line x1="460" y1="0" x2="460" y2="1080"/><line x1="1460" y1="0" x2="1460" y2="1080"/>
+    <line x1="360" y1="0" x2="360" y2="1080"/><line x1="1560" y1="0" x2="1560" y2="1080"/>
+    <line x1="260" y1="0" x2="260" y2="1080"/><line x1="1660" y1="0" x2="1660" y2="1080"/>
+    <line x1="160" y1="0" x2="160" y2="1080"/><line x1="1760" y1="0" x2="1760" y2="1080"/>
+    <line x1="60" y1="0" x2="60" y2="1080"/><line x1="1860" y1="0" x2="1860" y2="1080"/>
+  </g>
+  <!-- Neon glow line -->
+  <line x1="0" y1="540" x2="1920" y2="540" stroke="#00ffff" stroke-width="2" opacity="0.8"/>
+  <!-- Sun/circle -->
+  <circle cx="960" cy="540" r="150" fill="none" stroke="#ff6600" stroke-width="3" opacity="0.6"/>
+  <circle cx="960" cy="540" r="100" fill="none" stroke="#ff3300" stroke-width="2" opacity="0.4"/>
+  <circle cx="960" cy="540" r="50" fill="#ff0066" opacity="0.2"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="stripe1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.5"/>
+    </linearGradient>
+    <linearGradient id="stripe2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="#050510"/>
+  <!-- Diagonal stripes -->
+  <g opacity="0.6" transform="rotate(-15, 960, 540)">
+    <rect x="-200" y="50" width="2400" height="30" fill="url(#stripe1)" rx="15"/>
+    <rect x="-200" y="130" width="2400" height="20" fill="url(#stripe2)" rx="10"/>
+    <rect x="-200" y="210" width="2400" height="40" fill="url(#stripe1)" rx="20"/>
+    <rect x="-200" y="310" width="2400" height="15" fill="url(#stripe2)" rx="7"/>
+    <rect x="-200" y="380" width="2400" height="35" fill="url(#stripe1)" rx="17"/>
+    <rect x="-200" y="470" width="2400" height="25" fill="url(#stripe2)" rx="12"/>
+    <rect x="-200" y="550" width="2400" height="45" fill="url(#stripe1)" rx="22"/>
+    <rect x="-200" y="650" width="2400" height="20" fill="url(#stripe2)" rx="10"/>
+    <rect x="-200" y="720" width="2400" height="30" fill="url(#stripe1)" rx="15"/>
+    <rect x="-200" y="800" width="2400" height="35" fill="url(#stripe2)" rx="17"/>
+    <rect x="-200" y="890" width="2400" height="25" fill="url(#stripe1)" rx="12"/>
+    <rect x="-200" y="960" width="2400" height="40" fill="url(#stripe2)" rx="20"/>
+    <rect x="-200" y="1050" width="2400" height="20" fill="url(#stripe1)" rx="10"/>
+  </g>
+</svg>

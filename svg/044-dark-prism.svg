@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#050510"/>
+  <!-- Prism triangle -->
+  <polygon points="960,200 1200,700 720,700" fill="none" stroke="#e2e8f0" stroke-width="2" opacity="0.8"/>
+  <polygon points="960,200 1200,700 720,700" fill="#ffffff" opacity="0.02"/>
+  <!-- Light beam in -->
+  <line x1="200" y1="450" x2="880" y2="450" stroke="#ffffff" stroke-width="3" opacity="0.8"/>
+  <!-- Refracted beams out -->
+  <line x1="1060" y1="380" x2="1800" y2="250" stroke="#ef4444" stroke-width="2.5" opacity="0.7"/>
+  <line x1="1070" y1="400" x2="1800" y2="340" stroke="#f97316" stroke-width="2.5" opacity="0.7"/>
+  <line x1="1080" y1="420" x2="1800" y2="430" stroke="#eab308" stroke-width="2.5" opacity="0.7"/>
+  <line x1="1090" y1="440" x2="1800" y2="520" stroke="#22c55e" stroke-width="2.5" opacity="0.7"/>
+  <line x1="1100" y1="460" x2="1800" y2="610" stroke="#3b82f6" stroke-width="2.5" opacity="0.7"/>
+  <line x1="1110" y1="480" x2="1800" y2="700" stroke="#6366f1" stroke-width="2.5" opacity="0.7"/>
+  <line x1="1120" y1="500" x2="1800" y2="790" stroke="#a855f7" stroke-width="2.5" opacity="0.7"/>
+  <!-- Subtle glow -->
+  <circle cx="960" cy="450" r="200" fill="#ffffff" opacity="0.02"/>
+</svg>

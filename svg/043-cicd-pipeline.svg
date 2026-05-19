@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0f172a"/>
+  <!-- Pipeline stages -->
+  <g>
+    <!-- Stage 1: Source -->
+    <rect x="100" y="440" width="200" height="200" rx="12" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+    <text x="200" y="520" font-family="monospace" font-size="14" fill="#4ade80" text-anchor="middle">Source</text>
+    <text x="200" y="545" font-family="monospace" font-size="11" fill="#64748b" text-anchor="middle">git push</text>
+    <text x="200" y="570" font-family="monospace" font-size="11" fill="#4ade80" text-anchor="middle">✓ triggered</text>
+    <!-- Arrow -->
+    <path d="M300,540 H380" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <!-- Stage 2: Build -->
+    <rect x="380" y="440" width="200" height="200" rx="12" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+    <text x="480" y="520" font-family="monospace" font-size="14" fill="#4ade80" text-anchor="middle">Build</text>
+    <text x="480" y="545" font-family="monospace" font-size="11" fill="#64748b" text-anchor="middle">npm run build</text>
+    <text x="480" y="570" font-family="monospace" font-size="11" fill="#4ade80" text-anchor="middle">✓ 45s</text>
+    <!-- Arrow -->
+    <path d="M580,540 H660" stroke="#475569" stroke-width="2" fill="none"/>
+    <!-- Stage 3: Test -->
+    <rect x="660" y="440" width="200" height="200" rx="12" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+    <text x="760" y="520" font-family="monospace" font-size="14" fill="#4ade80" text-anchor="middle">Test</text>
+    <text x="760" y="545" font-family="monospace" font-size="11" fill="#64748b" text-anchor="middle">jest --coverage</text>
+    <text x="760" y="570" font-family="monospace" font-size="11" fill="#4ade80" text-anchor="middle">✓ 127 passed</text>
+    <!-- Arrow -->
+    <path d="M860,540 H940" stroke="#475569" stroke-width="2" fill="none"/>
+    <!-- Stage 4: Security -->
+    <rect x="940" y="440" width="200" height="200" rx="12" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+    <text x="1040" y="520" font-family="monospace" font-size="14" fill="#4ade80" text-anchor="middle">Security</text>
+    <text x="1040" y="545" font-family="monospace" font-size="11" fill="#64748b" text-anchor="middle">snyk test</text>
+    <text x="1040" y="570" font-family="monospace" font-size="11" fill="#4ade80" text-anchor="middle">✓ 0 vulns</text>
+    <!-- Arrow -->
+    <path d="M1140,540 H1220" stroke="#475569" stroke-width="2" fill="none"/>
+    <!-- Stage 5: Deploy Staging -->
+    <rect x="1220" y="440" width="200" height="200" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="1320" y="520" font-family="monospace" font-size="14" fill="#fbbf24" text-anchor="middle">Staging</text>
+    <text x="1320" y="545" font-family="monospace" font-size="11" fill="#64748b" text-anchor="middle">deploy:staging</text>
+    <text x="1320" y="570" font-family="monospace" font-size="11" fill="#fbbf24" text-anchor="middle">⟳ deploying...</text>
+    <!-- Arrow -->
+    <path d="M1420,540 H1500" stroke="#475569" stroke-width="2" fill="none"/>
+    <!-- Stage 6: Production -->
+    <rect x="1500" y="440" width="200" height="200" rx="12" fill="#1e293b" stroke="#475569" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="1600" y="520" font-family="monospace" font-size="14" fill="#64748b" text-anchor="middle">Production</text>
+    <text x="1600" y="545" font-family="monospace" font-size="11" fill="#64748b" text-anchor="middle">deploy:prod</text>
+    <text x="1600" y="570" font-family="monospace" font-size="11" fill="#64748b" text-anchor="middle">○ waiting</text>
+  </g>
+  <!-- Header -->
+  <text x="960" y="100" font-family="monospace" font-size="20" fill="#e2e8f0" text-anchor="middle">CI/CD Pipeline — main branch</text>
+  <text x="960" y="130" font-family="monospace" font-size="13" fill="#64748b" text-anchor="middle">Run #4521 • commit a3f2c1d • 3 minutes ago</text>
+  <!-- Progress bar -->
+  <rect x="300" y="380" width="1320" height="4" rx="2" fill="#1e293b"/>
+  <rect x="300" y="380" width="880" height="4" rx="2" fill="#22c55e"/>
+  <rect x="1180" y="380" width="100" height="4" rx="2" fill="#f59e0b"/>
+</svg>

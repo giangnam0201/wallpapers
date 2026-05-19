@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#1a1b26"/>
+  <g font-family="monospace" font-size="15">
+    <text x="300" y="120" fill="#7aa2f7">interface</text><text x="390" y="120" fill="#2ac3de"> Repository</text><text x="510" y="120" fill="#c0caf5">&lt;T extends Entity&gt; {</text>
+    <text x="330" y="155" fill="#e0af68">findById</text><text x="400" y="155" fill="#c0caf5">(id: </text><text x="440" y="155" fill="#2ac3de">string</text><text x="490" y="155" fill="#c0caf5">): Promise&lt;T | null&gt;;</text>
+    <text x="330" y="185" fill="#e0af68">findAll</text><text x="390" y="185" fill="#c0caf5">(filter?: Partial&lt;T&gt;): Promise&lt;T[]&gt;;</text>
+    <text x="330" y="215" fill="#e0af68">create</text><text x="385" y="215" fill="#c0caf5">(data: Omit&lt;T, 'id' | 'createdAt'&gt;): Promise&lt;T&gt;;</text>
+    <text x="330" y="245" fill="#e0af68">update</text><text x="385" y="245" fill="#c0caf5">(id: </text><text x="425" y="245" fill="#2ac3de">string</text><text x="475" y="245" fill="#c0caf5">, data: Partial&lt;T&gt;): Promise&lt;T&gt;;</text>
+    <text x="330" y="275" fill="#e0af68">delete</text><text x="385" y="275" fill="#c0caf5">(id: </text><text x="425" y="275" fill="#2ac3de">string</text><text x="475" y="275" fill="#c0caf5">): Promise&lt;</text><text x="560" y="275" fill="#2ac3de">void</text><text x="595" y="275" fill="#c0caf5">&gt;;</text>
+    <text x="300" y="305" fill="#c0caf5">}</text>
+    <text x="300" y="365" fill="#7aa2f7">type</text><text x="340" y="365" fill="#2ac3de"> AsyncResult</text><text x="450" y="365" fill="#c0caf5">&lt;T, E = Error&gt; =</text>
+    <text x="330" y="395" fill="#c0caf5">| { success: </text><text x="440" y="395" fill="#ff9e64">true</text><text x="475" y="395" fill="#c0caf5">; data: T }</text>
+    <text x="330" y="425" fill="#c0caf5">| { success: </text><text x="440" y="425" fill="#ff9e64">false</text><text x="480" y="425" fill="#c0caf5">; error: E };</text>
+    <text x="300" y="485" fill="#7aa2f7">class</text><text x="345" y="485" fill="#2ac3de"> UserService</text><text x="460" y="485" fill="#7aa2f7"> implements</text><text x="550" y="485" fill="#2ac3de"> Repository</text><text x="650" y="485" fill="#c0caf5">&lt;User&gt; {</text>
+    <text x="330" y="520" fill="#7aa2f7">private</text><text x="390" y="520" fill="#c0caf5"> db: DatabaseClient;</text>
+    <text x="330" y="555" fill="#7aa2f7">private</text><text x="390" y="555" fill="#c0caf5"> cache: Map&lt;</text><text x="480" y="555" fill="#2ac3de">string</text><text x="530" y="555" fill="#c0caf5">, User&gt;;</text>
+    <text x="330" y="615" fill="#7aa2f7">async</text><text x="375" y="615" fill="#e0af68"> findById</text><text x="450" y="615" fill="#c0caf5">(id: </text><text x="490" y="615" fill="#2ac3de">string</text><text x="540" y="615" fill="#c0caf5">): Promise&lt;User | </text><text x="670" y="615" fill="#ff9e64">null</text><text x="700" y="615" fill="#c0caf5">&gt; {</text>
+    <text x="360" y="645" fill="#7aa2f7">const</text><text x="405" y="645" fill="#c0caf5"> cached = </text><text x="480" y="645" fill="#7aa2f7">this</text><text x="510" y="645" fill="#c0caf5">.cache.get(id);</text>
+    <text x="360" y="675" fill="#7aa2f7">if</text><text x="380" y="675" fill="#c0caf5"> (cached) </text><text x="445" y="675" fill="#7aa2f7">return</text><text x="500" y="675" fill="#c0caf5"> cached;</text>
+    <text x="360" y="715" fill="#7aa2f7">const</text><text x="405" y="715" fill="#c0caf5"> user = </text><text x="465" y="715" fill="#7aa2f7">await</text><text x="510" y="715" fill="#c0caf5"> </text><text x="520" y="715" fill="#7aa2f7">this</text><text x="550" y="715" fill="#c0caf5">.db.query&lt;User&gt;(</text>
+    <text x="390" y="745" fill="#9ece6a">`SELECT * FROM users WHERE id = $1`</text><text x="670" y="745" fill="#c0caf5">,</text>
+    <text x="390" y="775" fill="#c0caf5">[id]</text>
+    <text x="360" y="805" fill="#c0caf5">);</text>
+    <text x="360" y="845" fill="#7aa2f7">if</text><text x="380" y="845" fill="#c0caf5"> (user) </text><text x="430" y="845" fill="#7aa2f7">this</text><text x="460" y="845" fill="#c0caf5">.cache.set(id, user);</text>
+    <text x="360" y="875" fill="#7aa2f7">return</text><text x="410" y="875" fill="#c0caf5"> user ?? </text><text x="475" y="875" fill="#ff9e64">null</text><text x="505" y="875" fill="#c0caf5">;</text>
+    <text x="330" y="905" fill="#c0caf5">}</text>
+    <text x="300" y="935" fill="#c0caf5">}</text>
+  </g>
+</svg>

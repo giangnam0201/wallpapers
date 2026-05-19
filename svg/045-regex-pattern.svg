@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0f172a"/>
+  <g font-family="monospace" font-size="18" fill="#94a3b8">
+    <text x="200" y="150" fill="#f59e0b">/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/</text>
+    <text x="200" y="190" fill="#64748b">// Email validation</text>
+    <text x="200" y="260" fill="#22c55e">/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&amp;])[A-Za-z\d@$!%*?&amp;]{8,}$/</text>
+    <text x="200" y="300" fill="#64748b">// Strong password</text>
+    <text x="200" y="370" fill="#3b82f6">/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/</text>
+    <text x="200" y="410" fill="#64748b">// URL matching</text>
+    <text x="200" y="480" fill="#ec4899">/^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/</text>
+    <text x="200" y="520" fill="#64748b">// Hex color code</text>
+    <text x="200" y="590" fill="#a855f7">/^(\+\d{1,3}[- ]?)?\d{10}$/</text>
+    <text x="200" y="630" fill="#64748b">// Phone number</text>
+    <text x="200" y="700" fill="#06b6d4">/^(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d?)$/</text>
+    <text x="200" y="740" fill="#64748b">// IPv4 address</text>
+    <text x="200" y="810" fill="#10b981">/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i</text>
+    <text x="200" y="850" fill="#64748b">// UUID v4</text>
+    <text x="200" y="920" fill="#ef4444">/\b\d{1,3}(,\d{3})*(\.\d+)?\b/g</text>
+    <text x="200" y="960" fill="#64748b">// Number with commas</text>
+  </g>
+</svg>

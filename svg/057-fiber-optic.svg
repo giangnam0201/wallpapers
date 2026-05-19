@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#030712"/>
+  <defs>
+    <filter id="fiberGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g fill="none" stroke-width="1.5" filter="url(#fiberGlow)">
+    <path d="M0,100 Q400,200 800,100 Q1200,0 1600,150 Q1800,200 1920,180" stroke="#06b6d4" opacity="0.7"/>
+    <path d="M0,150 Q400,250 800,150 Q1200,50 1600,200 Q1800,250 1920,230" stroke="#22d3ee" opacity="0.6"/>
+    <path d="M0,200 Q400,300 800,200 Q1200,100 1600,250 Q1800,300 1920,280" stroke="#67e8f9" opacity="0.5"/>
+    <path d="M0,350 Q300,450 700,350 Q1100,250 1500,400 Q1700,450 1920,420" stroke="#a855f7" opacity="0.7"/>
+    <path d="M0,400 Q300,500 700,400 Q1100,300 1500,450 Q1700,500 1920,470" stroke="#c084fc" opacity="0.6"/>
+    <path d="M0,450 Q300,550 700,450 Q1100,350 1500,500 Q1700,550 1920,520" stroke="#e9d5ff" opacity="0.4"/>
+    <path d="M0,600 Q500,700 960,600 Q1400,500 1920,650" stroke="#ec4899" opacity="0.7"/>
+    <path d="M0,650 Q500,750 960,650 Q1400,550 1920,700" stroke="#f472b6" opacity="0.6"/>
+    <path d="M0,700 Q500,800 960,700 Q1400,600 1920,750" stroke="#fbcfe8" opacity="0.4"/>
+    <path d="M0,850 Q600,750 1200,850 Q1600,900 1920,830" stroke="#10b981" opacity="0.7"/>
+    <path d="M0,900 Q600,800 1200,900 Q1600,950 1920,880" stroke="#34d399" opacity="0.6"/>
+    <path d="M0,950 Q600,850 1200,950 Q1600,1000 1920,930" stroke="#6ee7b7" opacity="0.4"/>
+  </g>
+</svg>

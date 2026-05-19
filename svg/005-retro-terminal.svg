@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#0d120d"/>
+    </linearGradient>
+    <filter id="scanlines">
+      <feFlood flood-color="#000" flood-opacity="0.03" result="flood"/>
+      <feComposite in="flood" in2="SourceGraphic" operator="over"/>
+    </filter>
+    <filter id="termGlow">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#termBg)"/>
+  <!-- CRT border -->
+  <rect x="100" y="50" width="1720" height="980" rx="20" fill="#050505" stroke="#1a3a1a" stroke-width="3"/>
+  <!-- Scanlines -->
+  <g opacity="0.05">
+    <line x1="100" y1="52" x2="1820" y2="52" stroke="#33ff33" stroke-width="1"/>
+    <line x1="100" y1="56" x2="1820" y2="56" stroke="#33ff33" stroke-width="1"/>
+    <line x1="100" y1="60" x2="1820" y2="60" stroke="#33ff33" stroke-width="1"/>
+    <line x1="100" y1="64" x2="1820" y2="64" stroke="#33ff33" stroke-width="1"/>
+  </g>
+  <!-- Terminal text -->
+  <g font-family="monospace" font-size="16" fill="#33ff33" filter="url(#termGlow)">
+    <text x="150" y="120">user@devbox:~$ neofetch</text>
+    <text x="150" y="160" fill="#33ff33" opacity="0.9">       _,met$$$$$gg.          user@devbox</text>
+    <text x="150" y="184" fill="#33ff33" opacity="0.9">    ,g$$$$$$$$$$$$$$$P.       -----------</text>
+    <text x="150" y="208" fill="#33ff33" opacity="0.9">  ,g$$P"     """Y$$.".        OS: Debian GNU/Linux 12</text>
+    <text x="150" y="232" fill="#33ff33" opacity="0.9"> ,$$P'              `$$$.      Kernel: 6.1.0-18-amd64</text>
+    <text x="150" y="256" fill="#33ff33" opacity="0.9">',$$P       ,ggs.     `$$b:    Uptime: 42 days, 7 hours</text>
+    <text x="150" y="280" fill="#33ff33" opacity="0.9">`d$$'     ,$P"'   .    $$$     Shell: zsh 5.9</text>
+    <text x="150" y="304" fill="#33ff33" opacity="0.9"> $$P      d$'     ,    $$P     Terminal: alacritty</text>
+    <text x="150" y="328" fill="#33ff33" opacity="0.9"> $$:      $$.   -    ,d$$'     CPU: AMD Ryzen 9 7950X</text>
+    <text x="150" y="352" fill="#33ff33" opacity="0.9"> $$;      Y$b._   _,d$P'       Memory: 8192MiB / 65536MiB</text>
+    <text x="150" y="376" fill="#33ff33" opacity="0.9"> Y$$.    `.`"Y$$$$P"'</text>
+    <text x="150" y="400" fill="#33ff33" opacity="0.9"> `$$b      "-.__</text>
+    <text x="150" y="440">user@devbox:~$ git log --oneline -5</text>
+    <text x="150" y="464" fill="#ffaa33">a3f2c1d</text><text x="230" y="464"> feat: implement dark mode toggle</text>
+    <text x="150" y="488" fill="#ffaa33">b7e4a9c</text><text x="230" y="488"> fix: resolve memory leak in worker</text>
+    <text x="150" y="512" fill="#ffaa33">c1d8f3e</text><text x="230" y="512"> refactor: optimize database queries</text>
+    <text x="150" y="536" fill="#ffaa33">d4a2b7f</text><text x="230" y="536"> docs: update API documentation</text>
+    <text x="150" y="560" fill="#ffaa33">e9c3d1a</text><text x="230" y="560"> test: add integration tests for auth</text>
+    <text x="150" y="600">user@devbox:~$ docker ps</text>
+    <text x="150" y="624" fill="#888888">CONTAINER ID   IMAGE          STATUS         PORTS</text>
+    <text x="150" y="648">a1b2c3d4e5f6   postgres:15    Up 42 days     5432/tcp</text>
+    <text x="150" y="672">f6e5d4c3b2a1   redis:7        Up 42 days     6379/tcp</text>
+    <text x="150" y="696">1a2b3c4d5e6f   nginx:latest   Up 42 days     80/tcp, 443/tcp</text>
+    <text x="150" y="736">user@devbox:~$ _</text>
+  </g>
+  <!-- Blinking cursor -->
+  <rect x="270" y="722" width="10" height="18" fill="#33ff33" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0;0.9" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>

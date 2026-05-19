@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#1a1b26"/>
+  <g font-family="monospace" font-size="14">
+    <text x="200" y="80" fill="#7aa2f7">resource</text><text x="280" y="80" fill="#9ece6a"> "aws_instance"</text><text x="430" y="80" fill="#e0af68"> "web"</text><text x="480" y="80" fill="#c0caf5"> {</text>
+    <text x="230" y="110" fill="#bb9af7">ami</text><text x="270" y="110" fill="#c0caf5">           = </text><text x="370" y="110" fill="#9ece6a">"ami-0c55b159cbfafe1f0"</text>
+    <text x="230" y="140" fill="#bb9af7">instance_type</text><text x="360" y="140" fill="#c0caf5"> = </text><text x="380" y="140" fill="#9ece6a">"t3.micro"</text>
+    <text x="230" y="170" fill="#bb9af7">key_name</text><text x="310" y="170" fill="#c0caf5">      = var.key_name</text>
+    <text x="230" y="200" fill="#bb9af7">subnet_id</text><text x="320" y="200" fill="#c0caf5">     = aws_subnet.main.id</text>
+    <text x="230" y="250" fill="#bb9af7">vpc_security_group_ids</text><text x="450" y="250" fill="#c0caf5"> = [</text>
+    <text x="260" y="280" fill="#c0caf5">aws_security_group.web.id</text>
+    <text x="230" y="310" fill="#c0caf5">]</text>
+    <text x="230" y="360" fill="#7aa2f7">tags</text><text x="270" y="360" fill="#c0caf5"> = {</text>
+    <text x="260" y="390" fill="#bb9af7">Name</text><text x="300" y="390" fill="#c0caf5"> = </text><text x="320" y="390" fill="#9ece6a">"production-web-server"</text>
+    <text x="260" y="420" fill="#bb9af7">Env</text><text x="290" y="420" fill="#c0caf5">  = </text><text x="310" y="420" fill="#9ece6a">"production"</text>
+    <text x="230" y="450" fill="#c0caf5">}</text>
+    <text x="200" y="480" fill="#c0caf5">}</text>
+    <text x="200" y="540" fill="#7aa2f7">resource</text><text x="280" y="540" fill="#9ece6a"> "aws_security_group"</text><text x="470" y="540" fill="#e0af68"> "web"</text><text x="520" y="540" fill="#c0caf5"> {</text>
+    <text x="230" y="570" fill="#bb9af7">name</text><text x="270" y="570" fill="#c0caf5">        = </text><text x="350" y="570" fill="#9ece6a">"web-sg"</text>
+    <text x="230" y="600" fill="#bb9af7">description</text><text x="330" y="600" fill="#c0caf5"> = </text><text x="350" y="600" fill="#9ece6a">"Security group for web servers"</text>
+    <text x="230" y="630" fill="#bb9af7">vpc_id</text><text x="290" y="630" fill="#c0caf5">      = aws_vpc.main.id</text>
+    <text x="230" y="680" fill="#7aa2f7">ingress</text><text x="290" y="680" fill="#c0caf5"> {</text>
+    <text x="260" y="710" fill="#bb9af7">from_port</text><text x="340" y="710" fill="#c0caf5">   = </text><text x="360" y="710" fill="#f7768e">443</text>
+    <text x="260" y="740" fill="#bb9af7">to_port</text><text x="320" y="740" fill="#c0caf5">     = </text><text x="340" y="740" fill="#f7768e">443</text>
+    <text x="260" y="770" fill="#bb9af7">protocol</text><text x="330" y="770" fill="#c0caf5">    = </text><text x="350" y="770" fill="#9ece6a">"tcp"</text>
+    <text x="260" y="800" fill="#bb9af7">cidr_blocks</text><text x="350" y="800" fill="#c0caf5"> = [</text><text x="370" y="800" fill="#9ece6a">"0.0.0.0/0"</text><text x="460" y="800" fill="#c0caf5">]</text>
+    <text x="230" y="830" fill="#c0caf5">}</text>
+    <text x="200" y="860" fill="#c0caf5">}</text>
+    <text x="200" y="920" fill="#7aa2f7">output</text><text x="260" y="920" fill="#e0af68"> "public_ip"</text><text x="380" y="920" fill="#c0caf5"> {</text>
+    <text x="230" y="950" fill="#bb9af7">value</text><text x="280" y="950" fill="#c0caf5"> = aws_instance.web.public_ip</text>
+    <text x="200" y="980" fill="#c0caf5">}</text>
+  </g>
+</svg>

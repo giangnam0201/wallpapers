@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#1a1b26"/>
+  <g font-family="monospace" font-size="16">
+    <text x="200" y="100" fill="#565f89">// TODO: Fix this before production</text>
+    <text x="200" y="140" fill="#565f89">// HACK: This works but I don't know why</text>
+    <text x="200" y="180" fill="#565f89">// FIXME: Race condition under high load</text>
+    <text x="200" y="220" fill="#565f89">// NOTE: Don't touch this, it breaks everything</text>
+    <text x="200" y="280" fill="#565f89">/**</text>
+    <text x="200" y="310" fill="#565f89"> * @deprecated Since v2.0 - use newFunction() instead</text>
+    <text x="200" y="340" fill="#565f89"> * @param {string} name - The thing that does stuff</text>
+    <text x="200" y="370" fill="#565f89"> * @returns {Promise&lt;void&gt;} - Returns nothing useful</text>
+    <text x="200" y="400" fill="#565f89"> */</text>
+    <text x="200" y="460" fill="#565f89">// WARNING: Here be dragons 🐉</text>
+    <text x="200" y="520" fill="#565f89">/* I spent 6 hours debugging this.</text>
+    <text x="200" y="550" fill="#565f89">   The solution was a missing semicolon. */</text>
+    <text x="200" y="610" fill="#565f89">// Dear future me: I'm sorry.</text>
+    <text x="200" y="670" fill="#565f89">// This code was written at 3am on a Friday.</text>
+    <text x="200" y="710" fill="#565f89">// It works. Don't ask me how.</text>
+    <text x="200" y="770" fill="#565f89">// OPTIMIZE: This runs in O(n^3) but ¯\_(ツ)_/¯</text>
+    <text x="200" y="830" fill="#565f89">// If you're reading this, the bug is probably above</text>
+    <text x="200" y="890" fill="#565f89">// "It works on my machine" - every dev ever</text>
+    <text x="200" y="950" fill="#565f89">// God forgive me for this recursive nightmare</text>
+  </g>
+</svg>

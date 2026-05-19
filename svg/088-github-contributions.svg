@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0d1117"/>
+  <text x="960" y="200" font-family="monospace" font-size="20" fill="#c9d1d9" text-anchor="middle">365 contributions in the last year</text>
+  <!-- Contribution grid -->
+  <g transform="translate(260,280)">
+    <!-- Generate a contribution grid pattern -->
+    <g fill="#0e4429" opacity="0.9">
+      <rect x="0" y="0" width="18" height="18" rx="3"/><rect x="0" y="24" width="18" height="18" rx="3"/>
+      <rect x="0" y="48" width="18" height="18" rx="3"/><rect x="0" y="72" width="18" height="18" rx="3"/>
+      <rect x="0" y="96" width="18" height="18" rx="3"/><rect x="0" y="120" width="18" height="18" rx="3"/>
+      <rect x="0" y="144" width="18" height="18" rx="3"/>
+    </g>
+    <g fill="#006d32">
+      <rect x="26" y="0" width="18" height="18" rx="3"/><rect x="26" y="48" width="18" height="18" rx="3"/>
+      <rect x="26" y="96" width="18" height="18" rx="3"/><rect x="26" y="144" width="18" height="18" rx="3"/>
+    </g>
+    <g fill="#0e4429">
+      <rect x="26" y="24" width="18" height="18" rx="3"/><rect x="26" y="72" width="18" height="18" rx="3"/>
+      <rect x="26" y="120" width="18" height="18" rx="3"/>
+    </g>
+    <g fill="#26a641">
+      <rect x="52" y="0" width="18" height="18" rx="3"/><rect x="52" y="24" width="18" height="18" rx="3"/>
+      <rect x="52" y="48" width="18" height="18" rx="3"/><rect x="52" y="72" width="18" height="18" rx="3"/>
+      <rect x="52" y="96" width="18" height="18" rx="3"/><rect x="52" y="120" width="18" height="18" rx="3"/>
+      <rect x="52" y="144" width="18" height="18" rx="3"/>
+    </g>
+    <g fill="#39d353">
+      <rect x="78" y="0" width="18" height="18" rx="3"/><rect x="78" y="48" width="18" height="18" rx="3"/>
+      <rect x="78" y="96" width="18" height="18" rx="3"/>
+    </g>
+    <g fill="#006d32">
+      <rect x="78" y="24" width="18" height="18" rx="3"/><rect x="78" y="72" width="18" height="18" rx="3"/>
+      <rect x="78" y="120" width="18" height="18" rx="3"/><rect x="78" y="144" width="18" height="18" rx="3"/>
+    </g>
+    <!-- Continue pattern across many weeks -->
+    <g fill="#0e4429">
+      <rect x="104" y="0" width="18" height="18" rx="3"/><rect x="104" y="24" width="18" height="18" rx="3"/>
+      <rect x="104" y="72" width="18" height="18" rx="3"/><rect x="104" y="120" width="18" height="18" rx="3"/>
+    </g>
+    <g fill="#26a641">
+      <rect x="104" y="48" width="18" height="18" rx="3"/><rect x="104" y="96" width="18" height="18" rx="3"/>
+      <rect x="104" y="144" width="18" height="18" rx="3"/>
+    </g>
+    <g fill="#39d353">
+      <rect x="130" y="24" width="18" height="18" rx="3"/><rect x="130" y="72" width="18" height="18" rx="3"/>
+      <rect x="130" y="96" width="18" height="18" rx="3"/>
+    </g>
+    <g fill="#006d32">
+      <rect x="130" y="0" width="18" height="18" rx="3"/><rect x="130" y="48" width="18" height="18" rx="3"/>
+      <rect x="130" y="120" width="18" height="18" rx="3"/><rect x="130" y="144" width="18" height="18" rx="3"/>
+    </g>
+    <!-- More weeks filling the grid... simplified for size -->
+    <g fill="#0e4429" opacity="0.6">
+      <rect x="156" y="0" width="18" height="18" rx="3"/><rect x="156" y="48" width="18" height="18" rx="3"/>
+      <rect x="182" y="24" width="18" height="18" rx="3"/><rect x="182" y="96" width="18" height="18" rx="3"/>
+      <rect x="208" y="0" width="18" height="18" rx="3"/><rect x="208" y="72" width="18" height="18" rx="3"/>
+      <rect x="234" y="48" width="18" height="18" rx="3"/><rect x="234" y="120" width="18" height="18" rx="3"/>
+      <rect x="260" y="24" width="18" height="18" rx="3"/><rect x="260" y="96" width="18" height="18" rx="3"/>
+    </g>
+    <g fill="#26a641" opacity="0.8">
+      <rect x="156" y="96" width="18" height="18" rx="3"/><rect x="182" y="48" width="18" height="18" rx="3"/>
+      <rect x="208" y="120" width="18" height="18" rx="3"/><rect x="234" y="24" width="18" height="18" rx="3"/>
+      <rect x="260" y="72" width="18" height="18" rx="3"/><rect x="286" y="0" width="18" height="18" rx="3"/>
+      <rect x="312" y="48" width="18" height="18" rx="3"/><rect x="338" y="96" width="18" height="18" rx="3"/>
+    </g>
+    <g fill="#39d353">
+      <rect x="364" y="0" width="18" height="18" rx="3"/><rect x="364" y="24" width="18" height="18" rx="3"/>
+      <rect x="364" y="48" width="18" height="18" rx="3"/><rect x="364" y="72" width="18" height="18" rx="3"/>
+      <rect x="364" y="96" width="18" height="18" rx="3"/><rect x="364" y="120" width="18" height="18" rx="3"/>
+      <rect x="364" y="144" width="18" height="18" rx="3"/>
+      <rect x="390" y="0" width="18" height="18" rx="3"/><rect x="390" y="48" width="18" height="18" rx="3"/>
+      <rect x="390" y="96" width="18" height="18" rx="3"/><rect x="390" y="144" width="18" height="18" rx="3"/>
+    </g>
+  </g>
+  <!-- Legend -->
+  <g transform="translate(1300,500)" font-family="monospace" font-size="11" fill="#8b949e">
+    <text x="0" y="12">Less</text>
+    <rect x="40" y="0" width="16" height="16" rx="3" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+    <rect x="62" y="0" width="16" height="16" rx="3" fill="#0e4429"/>
+    <rect x="84" y="0" width="16" height="16" rx="3" fill="#006d32"/>
+    <rect x="106" y="0" width="16" height="16" rx="3" fill="#26a641"/>
+    <rect x="128" y="0" width="16" height="16" rx="3" fill="#39d353"/>
+    <text x="152" y="12">More</text>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0a0a0f"/>
+  <g fill="none" stroke-width="1">
+    <polygon points="960,100 1160,450 760,450" stroke="#3b82f6" opacity="0.6"/>
+    <polygon points="960,150 1120,420 800,420" stroke="#6366f1" opacity="0.5"/>
+    <polygon points="960,200 1080,390 840,390" stroke="#8b5cf6" opacity="0.4"/>
+    <polygon points="960,250 1040,360 880,360" stroke="#a78bfa" opacity="0.3"/>
+    <polygon points="500,300 750,700 250,700" stroke="#06b6d4" opacity="0.4"/>
+    <polygon points="1400,350 1650,750 1150,750" stroke="#ec4899" opacity="0.4"/>
+    <polygon points="300,600 500,950 100,950" stroke="#10b981" opacity="0.3"/>
+    <polygon points="1600,500 1800,850 1400,850" stroke="#f59e0b" opacity="0.3"/>
+    <polygon points="960,500 1260,1050 660,1050" stroke="#3b82f6" opacity="0.2"/>
+    <polygon points="700,200 900,550 500,550" stroke="#8b5cf6" opacity="0.25"/>
+    <polygon points="1200,200 1400,550 1000,550" stroke="#06b6d4" opacity="0.25"/>
+  </g>
+  <!-- Filled accent triangles -->
+  <polygon points="960,280 1000,350 920,350" fill="#6366f1" opacity="0.3"/>
+  <polygon points="500,500 540,570 460,570" fill="#06b6d4" opacity="0.2"/>
+  <polygon points="1400,550 1440,620 1360,620" fill="#ec4899" opacity="0.2"/>
+</svg>

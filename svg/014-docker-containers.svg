@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0c1222"/>
+  <!-- Docker whale shape abstracted -->
+  <g transform="translate(660, 300)">
+    <!-- Container boxes -->
+    <rect x="0" y="200" width="100" height="80" rx="4" fill="#1d4ed8" opacity="0.8"/>
+    <rect x="110" y="200" width="100" height="80" rx="4" fill="#2563eb" opacity="0.8"/>
+    <rect x="220" y="200" width="100" height="80" rx="4" fill="#3b82f6" opacity="0.8"/>
+    <rect x="110" y="110" width="100" height="80" rx="4" fill="#1d4ed8" opacity="0.7"/>
+    <rect x="220" y="110" width="100" height="80" rx="4" fill="#2563eb" opacity="0.7"/>
+    <rect x="330" y="200" width="100" height="80" rx="4" fill="#60a5fa" opacity="0.8"/>
+    <rect x="220" y="20" width="100" height="80" rx="4" fill="#1d4ed8" opacity="0.6"/>
+    <rect x="330" y="110" width="100" height="80" rx="4" fill="#3b82f6" opacity="0.7"/>
+    <rect x="440" y="200" width="100" height="80" rx="4" fill="#93c5fd" opacity="0.8"/>
+    <!-- Whale body -->
+    <ellipse cx="300" cy="380" rx="300" ry="80" fill="#1e3a5f" opacity="0.5"/>
+  </g>
+  <!-- Container labels -->
+  <g font-family="monospace" font-size="12" fill="#93c5fd" text-anchor="middle">
+    <text x="710" y="545">nginx</text>
+    <text x="820" y="545">api</text>
+    <text x="930" y="545">db</text>
+    <text x="1040" y="545">redis</text>
+    <text x="1150" y="545">worker</text>
+  </g>
+  <!-- Network lines -->
+  <g stroke="#3b82f6" stroke-width="1" opacity="0.3" stroke-dasharray="5,5">
+    <line x1="710" y1="560" x2="710" y2="700"/>
+    <line x1="820" y1="560" x2="820" y2="700"/>
+    <line x1="930" y1="560" x2="930" y2="700"/>
+    <line x1="1040" y1="560" x2="1040" y2="700"/>
+    <line x1="1150" y1="560" x2="1150" y2="700"/>
+    <line x1="600" y1="700" x2="1250" y2="700"/>
+  </g>
+  <text x="925" y="730" font-family="monospace" font-size="14" fill="#3b82f6" text-anchor="middle" opacity="0.6">docker-network: app_default</text>
+  <text x="960" y="180" font-family="monospace" font-size="28" fill="#60a5fa" text-anchor="middle" opacity="0.8">docker compose up -d</text>
+</svg>

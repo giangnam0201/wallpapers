@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#050505"/>
+  <defs>
+    <filter id="neonGlow1">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="neonGlow2">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g fill="none" stroke-linecap="round">
+    <path d="M0,300 Q480,200 960,400 Q1440,600 1920,300" stroke="#ff0080" stroke-width="3" filter="url(#neonGlow1)"/>
+    <path d="M0,500 Q480,400 960,540 Q1440,680 1920,500" stroke="#00ffff" stroke-width="2" filter="url(#neonGlow1)"/>
+    <path d="M0,700 Q480,600 960,700 Q1440,800 1920,650" stroke="#7c3aed" stroke-width="2.5" filter="url(#neonGlow1)"/>
+    <path d="M0,400 Q480,500 960,350 Q1440,200 1920,400" stroke="#ff0080" stroke-width="1.5" opacity="0.5" filter="url(#neonGlow2)"/>
+    <path d="M0,600 Q480,700 960,600 Q1440,500 1920,650" stroke="#00ffff" stroke-width="1.5" opacity="0.5" filter="url(#neonGlow2)"/>
+    <path d="M0,800 Q480,750 960,850 Q1440,950 1920,800" stroke="#7c3aed" stroke-width="1" opacity="0.3"/>
+    <path d="M0,200 Q480,100 960,250 Q1440,400 1920,200" stroke="#ff0080" stroke-width="1" opacity="0.3"/>
+  </g>
+</svg>

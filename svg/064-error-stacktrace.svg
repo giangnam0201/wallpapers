@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#1a1b26"/>
+  <g font-family="monospace" font-size="14">
+    <text x="100" y="100" fill="#f7768e" font-size="18">Unhandled Promise Rejection:</text>
+    <text x="100" y="140" fill="#f7768e">TypeError: Cannot read properties of undefined (reading 'map')</text>
+    <text x="100" y="180" fill="#565f89">    at UserList (/src/components/UserList.tsx:42:18)</text>
+    <text x="100" y="210" fill="#565f89">    at renderWithHooks (/node_modules/react-dom/cjs/react-dom.js:14985:18)</text>
+    <text x="100" y="240" fill="#565f89">    at mountIndeterminateComponent (/node_modules/react-dom/cjs/react-dom.js:17811:13)</text>
+    <text x="100" y="270" fill="#565f89">    at beginWork (/node_modules/react-dom/cjs/react-dom.js:19049:16)</text>
+    <text x="100" y="300" fill="#565f89">    at HTMLUnknownElement.callCallback (/node_modules/react-dom/cjs/react-dom.js:3945:14)</text>
+    <text x="100" y="340" fill="#c0caf5">---</text>
+    <text x="100" y="380" fill="#e0af68" font-size="16">The above error occurred in the &lt;UserList&gt; component:</text>
+    <text x="100" y="420" fill="#565f89">    at UserList (/src/components/UserList.tsx:38:5)</text>
+    <text x="100" y="450" fill="#565f89">    at div</text>
+    <text x="100" y="480" fill="#565f89">    at App (/src/App.tsx:12:3)</text>
+    <text x="100" y="510" fill="#565f89">    at ErrorBoundary (/src/ErrorBoundary.tsx:8:5)</text>
+    <text x="100" y="550" fill="#c0caf5">---</text>
+    <text x="100" y="590" fill="#7aa2f7" font-size="16">Possible fix:</text>
+    <text x="100" y="630" fill="#9ece6a">  // Before:</text>
+    <text x="100" y="660" fill="#f7768e">  const items = data.users.map(u => u.name);</text>
+    <text x="100" y="700" fill="#9ece6a">  // After:</text>
+    <text x="100" y="730" fill="#9ece6a">  const items = data?.users?.map(u => u.name) ?? [];</text>
+    <text x="100" y="790" fill="#565f89">  // Or use optional chaining with nullish coalescing</text>
+    <text x="100" y="820" fill="#565f89">  // to handle undefined data gracefully</text>
+    <text x="100" y="880" fill="#bb9af7">webpack compiled with 1 error</text>
+    <text x="100" y="920" fill="#565f89">[HMR] Waiting for update signal from WDS...</text>
+  </g>
+</svg>

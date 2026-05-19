@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#1e1e2e"/>
+  <g font-family="monospace" font-size="16">
+    <text x="300" y="100" fill="#cdd6f4">{</text>
+    <text x="330" y="140" fill="#89b4fa">"name"</text><text x="395" y="140" fill="#cdd6f4">: </text><text x="410" y="140" fill="#a6e3a1">"dark-wallpapers"</text><text x="575" y="140" fill="#cdd6f4">,</text>
+    <text x="330" y="175" fill="#89b4fa">"version"</text><text x="420" y="175" fill="#cdd6f4">: </text><text x="435" y="175" fill="#a6e3a1">"2.0.0"</text><text x="505" y="175" fill="#cdd6f4">,</text>
+    <text x="330" y="210" fill="#89b4fa">"description"</text><text x="450" y="210" fill="#cdd6f4">: </text><text x="465" y="210" fill="#a6e3a1">"High quality dark wallpapers for developers"</text><text x="815" y="210" fill="#cdd6f4">,</text>
+    <text x="330" y="245" fill="#89b4fa">"author"</text><text x="410" y="245" fill="#cdd6f4">: {</text>
+    <text x="360" y="280" fill="#89b4fa">"name"</text><text x="420" y="280" fill="#cdd6f4">: </text><text x="435" y="280" fill="#a6e3a1">"Developer"</text><text x="535" y="280" fill="#cdd6f4">,</text>
+    <text x="360" y="315" fill="#89b4fa">"github"</text><text x="435" y="315" fill="#cdd6f4">: </text><text x="450" y="315" fill="#a6e3a1">"@giangnam0201"</text>
+    <text x="330" y="350" fill="#cdd6f4">},</text>
+    <text x="330" y="385" fill="#89b4fa">"themes"</text><text x="410" y="385" fill="#cdd6f4">: [</text>
+    <text x="360" y="420" fill="#a6e3a1">"dark"</text><text x="410" y="420" fill="#cdd6f4">,</text>
+    <text x="360" y="455" fill="#a6e3a1">"coding"</text><text x="430" y="455" fill="#cdd6f4">,</text>
+    <text x="360" y="490" fill="#a6e3a1">"minimal"</text><text x="445" y="490" fill="#cdd6f4">,</text>
+    <text x="360" y="525" fill="#a6e3a1">"cyberpunk"</text><text x="460" y="525" fill="#cdd6f4">,</text>
+    <text x="360" y="560" fill="#a6e3a1">"space"</text>
+    <text x="330" y="595" fill="#cdd6f4">],</text>
+    <text x="330" y="630" fill="#89b4fa">"count"</text><text x="395" y="630" fill="#cdd6f4">: </text><text x="410" y="630" fill="#fab387">105</text><text x="440" y="630" fill="#cdd6f4">,</text>
+    <text x="330" y="665" fill="#89b4fa">"formats"</text><text x="420" y="665" fill="#cdd6f4">: {</text>
+    <text x="360" y="700" fill="#89b4fa">"svg"</text><text x="405" y="700" fill="#cdd6f4">: </text><text x="420" y="700" fill="#fab387">true</text><text x="460" y="700" fill="#cdd6f4">,</text>
+    <text x="360" y="735" fill="#89b4fa">"png"</text><text x="405" y="735" fill="#cdd6f4">: </text><text x="420" y="735" fill="#fab387">true</text><text x="460" y="735" fill="#cdd6f4">,</text>
+    <text x="360" y="770" fill="#89b4fa">"jpeg"</text><text x="415" y="770" fill="#cdd6f4">: </text><text x="430" y="770" fill="#fab387">true</text>
+    <text x="330" y="805" fill="#cdd6f4">},</text>
+    <text x="330" y="840" fill="#89b4fa">"license"</text><text x="420" y="840" fill="#cdd6f4">: </text><text x="435" y="840" fill="#a6e3a1">"MIT"</text><text x="480" y="840" fill="#cdd6f4">,</text>
+    <text x="330" y="875" fill="#89b4fa">"stars"</text><text x="395" y="875" fill="#cdd6f4">: </text><text x="410" y="875" fill="#fab387">null</text>
+    <text x="300" y="910" fill="#cdd6f4">}</text>
+  </g>
+</svg>

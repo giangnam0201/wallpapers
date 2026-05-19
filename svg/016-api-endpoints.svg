@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0f172a"/>
+  <!-- API method badges -->
+  <g font-family="monospace" font-size="16">
+    <!-- GET -->
+    <rect x="300" y="150" width="60" height="30" rx="4" fill="#22c55e" opacity="0.9"/>
+    <text x="315" y="170" fill="#fff" font-weight="bold">GET</text>
+    <text x="380" y="170" fill="#94a3b8">/api/v1/users</text>
+    <rect x="300" y="200" width="60" height="30" rx="4" fill="#22c55e" opacity="0.9"/>
+    <text x="315" y="220" fill="#fff" font-weight="bold">GET</text>
+    <text x="380" y="220" fill="#94a3b8">/api/v1/users/:id</text>
+    <!-- POST -->
+    <rect x="300" y="270" width="60" height="30" rx="4" fill="#3b82f6" opacity="0.9"/>
+    <text x="310" y="290" fill="#fff" font-weight="bold">POST</text>
+    <text x="380" y="290" fill="#94a3b8">/api/v1/users</text>
+    <rect x="300" y="320" width="60" height="30" rx="4" fill="#3b82f6" opacity="0.9"/>
+    <text x="310" y="340" fill="#fff" font-weight="bold">POST</text>
+    <text x="380" y="340" fill="#94a3b8">/api/v1/auth/login</text>
+    <!-- PUT -->
+    <rect x="300" y="390" width="60" height="30" rx="4" fill="#f59e0b" opacity="0.9"/>
+    <text x="315" y="410" fill="#fff" font-weight="bold">PUT</text>
+    <text x="380" y="410" fill="#94a3b8">/api/v1/users/:id</text>
+    <!-- DELETE -->
+    <rect x="300" y="460" width="75" height="30" rx="4" fill="#ef4444" opacity="0.9"/>
+    <text x="305" y="480" fill="#fff" font-weight="bold">DELETE</text>
+    <text x="395" y="480" fill="#94a3b8">/api/v1/users/:id</text>
+    <!-- PATCH -->
+    <rect x="300" y="530" width="70" height="30" rx="4" fill="#a855f7" opacity="0.9"/>
+    <text x="308" y="550" fill="#fff" font-weight="bold">PATCH</text>
+    <text x="390" y="550" fill="#94a3b8">/api/v1/users/:id/avatar</text>
+  </g>
+  <!-- Response JSON -->
+  <g font-family="monospace" font-size="14">
+    <rect x="1000" y="150" width="600" height="400" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="1030" y="185" fill="#64748b">// Response 200 OK</text>
+    <text x="1030" y="215" fill="#fbbf24">{</text>
+    <text x="1060" y="245" fill="#a78bfa">"status"</text><text x="1150" y="245" fill="#94a3b8">:</text><text x="1170" y="245" fill="#34d399">"success"</text><text x="1270" y="245" fill="#94a3b8">,</text>
+    <text x="1060" y="275" fill="#a78bfa">"data"</text><text x="1130" y="275" fill="#94a3b8">: {</text>
+    <text x="1090" y="305" fill="#a78bfa">"id"</text><text x="1130" y="305" fill="#94a3b8">:</text><text x="1150" y="305" fill="#67e8f9">1</text><text x="1162" y="305" fill="#94a3b8">,</text>
+    <text x="1090" y="335" fill="#a78bfa">"name"</text><text x="1160" y="335" fill="#94a3b8">:</text><text x="1180" y="335" fill="#34d399">"Developer"</text><text x="1300" y="335" fill="#94a3b8">,</text>
+    <text x="1090" y="365" fill="#a78bfa">"role"</text><text x="1160" y="365" fill="#94a3b8">:</text><text x="1180" y="365" fill="#34d399">"admin"</text><text x="1270" y="365" fill="#94a3b8">,</text>
+    <text x="1090" y="395" fill="#a78bfa">"active"</text><text x="1180" y="395" fill="#94a3b8">:</text><text x="1200" y="395" fill="#67e8f9">true</text>
+    <text x="1060" y="425" fill="#94a3b8">},</text>
+    <text x="1060" y="455" fill="#a78bfa">"meta"</text><text x="1130" y="455" fill="#94a3b8">: {</text>
+    <text x="1090" y="485" fill="#a78bfa">"timestamp"</text><text x="1200" y="485" fill="#94a3b8">:</text><text x="1220" y="485" fill="#34d399">"2024-01-15T10:30:00Z"</text>
+    <text x="1060" y="515" fill="#94a3b8">}</text>
+    <text x="1030" y="535" fill="#fbbf24">}</text>
+  </g>
+</svg>

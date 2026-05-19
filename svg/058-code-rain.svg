@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0a0a14"/>
+  <g font-family="monospace" font-size="12" fill="#6366f1">
+    <text x="50" y="50" opacity="0.3">const app = express();</text>
+    <text x="50" y="150" opacity="0.5">router.get('/api', handler);</text>
+    <text x="50" y="280" opacity="0.2">import { useState } from 'react';</text>
+    <text x="50" y="400" opacity="0.4">export default function App() {</text>
+    <text x="50" y="520" opacity="0.3">await prisma.user.findMany();</text>
+    <text x="50" y="650" opacity="0.5">console.log('deployed!');</text>
+    <text x="50" y="780" opacity="0.2">npm install --save-dev</text>
+    <text x="50" y="900" opacity="0.4">git commit -m "feat: add auth"</text>
+    <text x="400" y="100" opacity="0.4">SELECT * FROM users WHERE</text>
+    <text x="400" y="230" opacity="0.3">docker build -t app:latest .</text>
+    <text x="400" y="350" opacity="0.5">kubectl apply -f deploy.yaml</text>
+    <text x="400" y="480" opacity="0.2">fn main() -> Result&lt;&gt; {</text>
+    <text x="400" y="600" opacity="0.4">def train_model(data):</text>
+    <text x="400" y="730" opacity="0.3">pub struct Config {</text>
+    <text x="400" y="860" opacity="0.5">@app.route('/health')</text>
+    <text x="400" y="980" opacity="0.2">terraform plan -out=tfplan</text>
+    <text x="800" y="80" opacity="0.5">interface User { id: string; }</text>
+    <text x="800" y="200" opacity="0.2">class Repository&lt;T&gt; {</text>
+    <text x="800" y="320" opacity="0.4">.then(res => res.json())</text>
+    <text x="800" y="450" opacity="0.3">@Injectable() class Service {</text>
+    <text x="800" y="570" opacity="0.5">useEffect(() => { fetch() }, [])</text>
+    <text x="800" y="700" opacity="0.2">async function* generator() {</text>
+    <text x="800" y="830" opacity="0.4">module.exports = config;</text>
+    <text x="800" y="950" opacity="0.3">CREATE INDEX CONCURRENTLY</text>
+    <text x="1200" y="120" opacity="0.3">return NextResponse.json(data);</text>
+    <text x="1200" y="250" opacity="0.5">impl Display for Error {</text>
+    <text x="1200" y="380" opacity="0.2">FROM node:20-alpine AS build</text>
+    <text x="1200" y="500" opacity="0.4">const [state, dispatch] = useReducer</text>
+    <text x="1200" y="630" opacity="0.3">channel.publish('events', msg)</text>
+    <text x="1200" y="760" opacity="0.5">COPY --from=build /app /app</text>
+    <text x="1200" y="880" opacity="0.2">nginx -t && nginx -s reload</text>
+    <text x="1200" y="1010" opacity="0.4">go run ./cmd/server/main.go</text>
+    <text x="1600" y="60" opacity="0.4">throw new HttpException(404)</text>
+    <text x="1600" y="180" opacity="0.2">match self.state {</text>
+    <text x="1600" y="310" opacity="0.5">pipe(map(), filter(), take())</text>
+    <text x="1600" y="440" opacity="0.3">res.status(200).send(data)</text>
+    <text x="1600" y="560" opacity="0.4">jest.mock('./database')</text>
+    <text x="1600" y="690" opacity="0.2">prometheus.counter('reqs')</text>
+    <text x="1600" y="820" opacity="0.5">redis.set('cache:key', val)</text>
+    <text x="1600" y="940" opacity="0.3">env.DATABASE_URL || fallback</text>
+  </g>
+</svg>

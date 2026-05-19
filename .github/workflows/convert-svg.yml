@@ -1,0 +1,69 @@
+name: Convert SVG to PNG/JPEG
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'svg/**'
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y librsvg2-bin imagemagick
+
+      - name: Create output directories
+        run: |
+          mkdir -p png/1920x1080 png/2560x1440 png/3840x2160
+          mkdir -p jpeg/1920x1080 jpeg/2560x1440 jpeg/3840x2160
+
+      - name: Convert SVG to PNG (multiple resolutions)
+        run: |
+          for svg in svg/*.svg; do
+            filename=$(basename "$svg" .svg)
+            echo "Converting $filename..."
+
+            # 1920x1080
+            rsvg-convert -w 1920 -h 1080 "$svg" -o "png/1920x1080/${filename}.png"
+
+            # 2560x1440
+            rsvg-convert -w 2560 -h 1440 "$svg" -o "png/2560x1440/${filename}.png"
+
+            # 3840x2160 (4K)
+            rsvg-convert -w 3840 -h 2160 "$svg" -o "png/3840x2160/${filename}.png"
+          done
+
+      - name: Convert PNG to JPEG
+        run: |
+          for png in png/1920x1080/*.png; do
+            filename=$(basename "$png" .png)
+            convert "$png" -quality 95 "jpeg/1920x1080/${filename}.jpg"
+          done
+
+          for png in png/2560x1440/*.png; do
+            filename=$(basename "$png" .png)
+            convert "$png" -quality 95 "jpeg/2560x1440/${filename}.jpg"
+          done
+
+          for png in png/3840x2160/*.png; do
+            filename=$(basename "$png" .png)
+            convert "$png" -quality 95 "jpeg/3840x2160/${filename}.jpg"
+          done
+
+      - name: Commit and push converted files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add png/ jpeg/
+          git diff --staged --quiet || git commit -m "Auto-convert SVG wallpapers to PNG/JPEG"
+          git push

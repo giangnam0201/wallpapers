@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0a0a14"/>
+  <!-- Large code arrows/chevrons -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="600,200 400,540 600,880" stroke="#6366f1" stroke-width="8" opacity="0.7"/>
+    <polyline points="700,250 520,540 700,830" stroke="#6366f1" stroke-width="5" opacity="0.4"/>
+    <polyline points="1320,200 1520,540 1320,880" stroke="#6366f1" stroke-width="8" opacity="0.7"/>
+    <polyline points="1220,250 1400,540 1220,830" stroke="#6366f1" stroke-width="5" opacity="0.4"/>
+  </g>
+  <!-- Slash -->
+  <line x1="1050" y1="200" x2="870" y2="880" stroke="#818cf8" stroke-width="6" opacity="0.5"/>
+  <!-- Dots representing content -->
+  <g fill="#a5b4fc" opacity="0.4">
+    <circle cx="910" cy="440" r="4"/><circle cx="930" cy="440" r="4"/><circle cx="950" cy="440" r="4"/>
+    <circle cx="970" cy="440" r="4"/><circle cx="990" cy="440" r="4"/><circle cx="1010" cy="440" r="4"/>
+    <circle cx="920" cy="540" r="4"/><circle cx="940" cy="540" r="4"/><circle cx="960" cy="540" r="4"/>
+    <circle cx="980" cy="540" r="4"/><circle cx="1000" cy="540" r="4"/>
+    <circle cx="930" cy="640" r="4"/><circle cx="950" cy="640" r="4"/><circle cx="970" cy="640" r="4"/>
+  </g>
+</svg>

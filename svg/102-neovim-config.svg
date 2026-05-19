@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#1a1b26"/>
+  <g font-family="monospace" font-size="14">
+    <text x="200" y="80" fill="#565f89">-- init.lua (Neovim configuration)</text>
+    <text x="200" y="120" fill="#7aa2f7">local</text><text x="240" y="120" fill="#c0caf5"> opts = { noremap = </text><text x="420" y="120" fill="#ff9e64">true</text><text x="455" y="120" fill="#c0caf5">, silent = </text><text x="540" y="120" fill="#ff9e64">true</text><text x="575" y="120" fill="#c0caf5"> }</text>
+    <text x="200" y="160" fill="#565f89">-- Leader key</text>
+    <text x="200" y="185" fill="#c0caf5">vim.g.mapleader = </text><text x="370" y="185" fill="#9ece6a">" "</text>
+    <text x="200" y="225" fill="#565f89">-- Plugin manager (lazy.nvim)</text>
+    <text x="200" y="250" fill="#7aa2f7">require</text><text x="260" y="250" fill="#c0caf5">(</text><text x="270" y="250" fill="#9ece6a">"lazy"</text><text x="320" y="250" fill="#c0caf5">).setup({</text>
+    <text x="230" y="280" fill="#c0caf5">{ </text><text x="245" y="280" fill="#9ece6a">"nvim-treesitter/nvim-treesitter"</text><text x="535" y="280" fill="#c0caf5"> },</text>
+    <text x="230" y="310" fill="#c0caf5">{ </text><text x="245" y="310" fill="#9ece6a">"neovim/nvim-lspconfig"</text><text x="440" y="310" fill="#c0caf5"> },</text>
+    <text x="230" y="340" fill="#c0caf5">{ </text><text x="245" y="340" fill="#9ece6a">"nvim-telescope/telescope.nvim"</text><text x="520" y="340" fill="#c0caf5"> },</text>
+    <text x="230" y="370" fill="#c0caf5">{ </text><text x="245" y="370" fill="#9ece6a">"folke/tokyonight.nvim"</text><text x="440" y="370" fill="#c0caf5"> },</text>
+    <text x="230" y="400" fill="#c0caf5">{ </text><text x="245" y="400" fill="#9ece6a">"hrsh7th/nvim-cmp"</text><text x="400" y="400" fill="#c0caf5"> },</text>
+    <text x="200" y="430" fill="#c0caf5">})</text>
+    <text x="200" y="480" fill="#565f89">-- Keybindings</text>
+    <text x="200" y="510" fill="#c0caf5">vim.keymap.set(</text><text x="360" y="510" fill="#9ece6a">"n"</text><text x="385" y="510" fill="#c0caf5">, </text><text x="395" y="510" fill="#9ece6a">"&lt;leader&gt;ff"</text><text x="490" y="510" fill="#c0caf5">, </text><text x="500" y="510" fill="#9ece6a">"&lt;cmd&gt;Telescope find_files&lt;cr&gt;"</text><text x="720" y="510" fill="#c0caf5">, opts)</text>
+    <text x="200" y="540" fill="#c0caf5">vim.keymap.set(</text><text x="360" y="540" fill="#9ece6a">"n"</text><text x="385" y="540" fill="#c0caf5">, </text><text x="395" y="540" fill="#9ece6a">"&lt;leader&gt;fg"</text><text x="490" y="540" fill="#c0caf5">, </text><text x="500" y="540" fill="#9ece6a">"&lt;cmd&gt;Telescope live_grep&lt;cr&gt;"</text><text x="715" y="540" fill="#c0caf5">, opts)</text>
+    <text x="200" y="590" fill="#565f89">-- LSP setup</text>
+    <text x="200" y="620" fill="#7aa2f7">local</text><text x="240" y="620" fill="#c0caf5"> lspconfig = </text><text x="340" y="620" fill="#7aa2f7">require</text><text x="395" y="620" fill="#c0caf5">(</text><text x="405" y="620" fill="#9ece6a">"lspconfig"</text><text x="480" y="620" fill="#c0caf5">)</text>
+    <text x="200" y="650" fill="#c0caf5">lspconfig.ts_ls.setup({})</text>
+    <text x="200" y="680" fill="#c0caf5">lspconfig.rust_analyzer.setup({})</text>
+    <text x="200" y="710" fill="#c0caf5">lspconfig.gopls.setup({})</text>
+    <text x="200" y="760" fill="#565f89">-- Theme</text>
+    <text x="200" y="790" fill="#c0caf5">vim.cmd.colorscheme(</text><text x="400" y="790" fill="#9ece6a">"tokyonight-night"</text><text x="555" y="790" fill="#c0caf5">)</text>
+  </g>
+</svg>

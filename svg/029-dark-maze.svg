@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0a0a14"/>
+  <g stroke="#4f46e5" stroke-width="2" fill="none" opacity="0.5">
+    <!-- Maze paths -->
+    <path d="M100,100 H300 V300 H500 V100 H700 V500 H500 V400 H300 V500 H100 V300"/>
+    <path d="M100,100 V500 H300"/>
+    <path d="M700,100 H900 V300 H1100 V100 H1300 V500 H1100 V400 H900 V500 H700"/>
+    <path d="M1300,100 H1500 V300 H1700 V100 H1820 V500 H1700 V400 H1500 V500 H1300"/>
+    <path d="M100,580 H300 V780 H500 V580 H700 V980 H500 V880 H300 V980 H100 V780"/>
+    <path d="M700,580 H900 V780 H1100 V580 H1300 V980 H1100 V880 H900 V980 H700"/>
+    <path d="M1300,580 H1500 V780 H1700 V580 H1820 V980 H1700 V880 H1500 V980 H1300"/>
+  </g>
+  <!-- Glow at center -->
+  <circle cx="960" cy="540" r="5" fill="#818cf8" opacity="0.8"/>
+  <circle cx="960" cy="540" r="15" fill="#818cf8" opacity="0.2"/>
+  <circle cx="960" cy="540" r="30" fill="#818cf8" opacity="0.05"/>
+</svg>

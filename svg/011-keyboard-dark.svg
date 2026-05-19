@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="kbBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#111827"/>
+      <stop offset="100%" style="stop-color:#1f2937"/>
+    </linearGradient>
+    <filter id="keyShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#kbBg)"/>
+  <!-- Keyboard base -->
+  <rect x="360" y="400" width="1200" height="400" rx="16" fill="#1a1a2e" stroke="#374151" stroke-width="2"/>
+  <!-- Key rows - simplified mechanical keyboard look -->
+  <g filter="url(#keyShadow)">
+    <!-- Row 1 - Number row -->
+    <rect x="400" y="430" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="460" y="430" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="520" y="430" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="580" y="430" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="640" y="430" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="700" y="430" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="760" y="430" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="820" y="430" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="880" y="430" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="940" y="430" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="1000" y="430" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="1060" y="430" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="1120" y="430" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="1180" y="430" width="110" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <!-- Row 2 -->
+    <rect x="400" y="490" width="75" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="485" y="490" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="545" y="490" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="605" y="490" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="665" y="490" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="725" y="490" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="785" y="490" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="845" y="490" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="905" y="490" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="965" y="490" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="1025" y="490" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="1085" y="490" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="1145" y="490" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="1205" y="490" width="85" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <!-- Row 3 - Home row with highlighted keys -->
+    <rect x="400" y="550" width="85" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="495" y="550" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="555" y="550" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="615" y="550" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="675" y="550" width="50" height="50" rx="6" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect x="735" y="550" width="50" height="50" rx="6" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect x="795" y="550" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="855" y="550" width="50" height="50" rx="6" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect x="915" y="550" width="50" height="50" rx="6" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
+    <rect x="975" y="550" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="1035" y="550" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="1095" y="550" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="1155" y="550" width="135" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <!-- Spacebar row -->
+    <rect x="400" y="670" width="75" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="485" y="670" width="75" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="570" y="670" width="75" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="655" y="670" width="350" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="1015" y="670" width="75" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="1100" y="670" width="75" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="1185" y="670" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+    <rect x="1245" y="670" width="50" height="50" rx="6" fill="#2d2d44" stroke="#4b5563" stroke-width="1"/>
+  </g>
+  <!-- Key labels for highlighted keys -->
+  <g font-family="monospace" font-size="14" fill="#60a5fa" text-anchor="middle">
+    <text x="700" y="580">H</text><text x="760" y="580">J</text>
+    <text x="880" y="580">K</text><text x="940" y="580">L</text>
+  </g>
+  <!-- Vim hint -->
+  <text x="960" y="350" font-family="monospace" font-size="18" fill="#60a5fa" text-anchor="middle" opacity="0.7">vim: hjkl</text>
+</svg>

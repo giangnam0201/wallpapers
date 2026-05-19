@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0f172a"/>
+  <g font-family="monospace" font-size="15">
+    <text x="200" y="100" fill="#e535ab">type</text><text x="245" y="100" fill="#e2e8f0"> Query {</text>
+    <text x="230" y="130" fill="#e2e8f0">users(limit: </text><text x="370" y="130" fill="#f59e0b">Int</text><text x="400" y="130" fill="#e2e8f0">, offset: </text><text x="490" y="130" fill="#f59e0b">Int</text><text x="520" y="130" fill="#e2e8f0">): [User!]!</text>
+    <text x="230" y="160" fill="#e2e8f0">user(id: </text><text x="330" y="160" fill="#f59e0b">ID!</text><text x="360" y="160" fill="#e2e8f0">): User</text>
+    <text x="230" y="190" fill="#e2e8f0">posts(filter: </text><text x="375" y="190" fill="#f59e0b">PostFilter</text><text x="460" y="190" fill="#e2e8f0">): [Post!]!</text>
+    <text x="230" y="220" fill="#e2e8f0">search(query: </text><text x="380" y="220" fill="#f59e0b">String!</text><text x="440" y="220" fill="#e2e8f0">): [SearchResult!]!</text>
+    <text x="200" y="250" fill="#e2e8f0">}</text>
+    <text x="200" y="310" fill="#e535ab">type</text><text x="245" y="310" fill="#e2e8f0"> Mutation {</text>
+    <text x="230" y="340" fill="#e2e8f0">createUser(input: </text><text x="400" y="340" fill="#f59e0b">CreateUserInput!</text><text x="535" y="340" fill="#e2e8f0">): User!</text>
+    <text x="230" y="370" fill="#e2e8f0">updateUser(id: </text><text x="380" y="370" fill="#f59e0b">ID!</text><text x="410" y="370" fill="#e2e8f0">, input: </text><text x="480" y="370" fill="#f59e0b">UpdateUserInput!</text><text x="620" y="370" fill="#e2e8f0">): User!</text>
+    <text x="230" y="400" fill="#e2e8f0">deleteUser(id: </text><text x="380" y="400" fill="#f59e0b">ID!</text><text x="410" y="400" fill="#e2e8f0">): </text><text x="430" y="400" fill="#f59e0b">Boolean!</text>
+    <text x="200" y="430" fill="#e2e8f0">}</text>
+    <text x="200" y="490" fill="#e535ab">type</text><text x="245" y="490" fill="#e2e8f0"> User {</text>
+    <text x="230" y="520" fill="#e2e8f0">id: </text><text x="260" y="520" fill="#f59e0b">ID!</text>
+    <text x="230" y="550" fill="#e2e8f0">email: </text><text x="290" y="550" fill="#f59e0b">String!</text>
+    <text x="230" y="580" fill="#e2e8f0">name: </text><text x="285" y="580" fill="#f59e0b">String!</text>
+    <text x="230" y="610" fill="#e2e8f0">avatar: </text><text x="300" y="610" fill="#f59e0b">String</text>
+    <text x="230" y="640" fill="#e2e8f0">posts: [</text><text x="300" y="640" fill="#f59e0b">Post!</text><text x="340" y="640" fill="#e2e8f0">]!</text>
+    <text x="230" y="670" fill="#e2e8f0">createdAt: </text><text x="330" y="670" fill="#f59e0b">DateTime!</text>
+    <text x="200" y="700" fill="#e2e8f0">}</text>
+    <text x="200" y="760" fill="#e535ab">type</text><text x="245" y="760" fill="#e2e8f0"> Post {</text>
+    <text x="230" y="790" fill="#e2e8f0">id: </text><text x="260" y="790" fill="#f59e0b">ID!</text>
+    <text x="230" y="820" fill="#e2e8f0">title: </text><text x="290" y="820" fill="#f59e0b">String!</text>
+    <text x="230" y="850" fill="#e2e8f0">content: </text><text x="310" y="850" fill="#f59e0b">String!</text>
+    <text x="230" y="880" fill="#e2e8f0">author: </text><text x="305" y="880" fill="#f59e0b">User!</text>
+    <text x="230" y="910" fill="#e2e8f0">tags: [</text><text x="290" y="910" fill="#f59e0b">String!</text><text x="350" y="910" fill="#e2e8f0">]!</text>
+    <text x="230" y="940" fill="#e2e8f0">published: </text><text x="335" y="940" fill="#f59e0b">Boolean!</text>
+    <text x="200" y="970" fill="#e2e8f0">}</text>
+  </g>
+  <!-- GraphQL logo hint -->
+  <circle cx="1600" cy="540" r="150" fill="none" stroke="#e535ab" stroke-width="1" opacity="0.15"/>
+  <polygon points="1600,400 1730,470 1730,610 1600,680 1470,610 1470,470" fill="none" stroke="#e535ab" stroke-width="1.5" opacity="0.2"/>
+</svg>

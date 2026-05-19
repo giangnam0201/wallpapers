@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0f172a"/>
+  <!-- CPU Graph -->
+  <rect x="80" y="60" width="860" height="300" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="100" y="90" font-family="monospace" font-size="14" fill="#94a3b8">CPU Usage (8 cores) — 67%</text>
+  <polyline points="100,320 150,300 200,280 250,310 300,260 350,230 400,250 450,200 500,220 550,180 600,210 650,190 700,220 750,200 800,170 850,190 900,180" fill="none" stroke="#22c55e" stroke-width="2"/>
+  <polyline points="100,320 150,300 200,280 250,310 300,260 350,230 400,250 450,200 500,220 550,180 600,210 650,190 700,220 750,200 800,170 850,190 900,180 900,340 100,340" fill="#22c55e" opacity="0.1"/>
+  <!-- Grid -->
+  <g stroke="#334155" stroke-width="0.5" opacity="0.3">
+    <line x1="100" y1="160" x2="920" y2="160"/><line x1="100" y1="220" x2="920" y2="220"/>
+    <line x1="100" y1="280" x2="920" y2="280"/><line x1="100" y1="340" x2="920" y2="340"/>
+  </g>
+  <!-- Memory Graph -->
+  <rect x="980" y="60" width="860" height="300" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="1000" y="90" font-family="monospace" font-size="14" fill="#94a3b8">Memory — 12.4 GB / 32 GB (39%)</text>
+  <rect x="1000" y="110" width="820" height="30" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="1000" y="110" width="318" height="30" rx="4" fill="#3b82f6" opacity="0.8"/>
+  <text x="1000" y="170" font-family="monospace" font-size="11" fill="#64748b">Used: 12.4 GB | Cached: 8.2 GB | Free: 11.4 GB</text>
+  <!-- Disk I/O -->
+  <rect x="80" y="400" width="860" height="280" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="100" y="430" font-family="monospace" font-size="14" fill="#94a3b8">Disk I/O — Read: 45 MB/s | Write: 23 MB/s</text>
+  <polyline points="100,640 150,620 200,600 250,630 300,580 350,550 400,570 450,520 500,540 550,500 600,530 650,510 700,540 750,520 800,490 850,510 900,500" fill="none" stroke="#f59e0b" stroke-width="2"/>
+  <polyline points="100,650 150,640 200,630 250,645 300,620 350,610 400,615 450,600 500,610 550,590 600,605 650,595 700,610 750,600 800,585 850,595 900,590" fill="none" stroke="#06b6d4" stroke-width="2"/>
+  <!-- Network -->
+  <rect x="980" y="400" width="860" height="280" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="1000" y="430" font-family="monospace" font-size="14" fill="#94a3b8">Network — Down: 125 Mbps | Up: 34 Mbps</text>
+  <polyline points="1000,640 1050,610 1100,620 1150,580 1200,600 1250,550 1300,570 1350,530 1400,560 1450,520 1500,540 1550,510 1600,530 1650,500 1700,520 1750,490 1800,510" fill="none" stroke="#a855f7" stroke-width="2"/>
+  <!-- Processes -->
+  <rect x="80" y="720" width="1760" height="300" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="100" y="750" font-family="monospace" font-size="14" fill="#94a3b8">Top Processes</text>
+  <g font-family="monospace" font-size="12">
+    <text x="100" y="780" fill="#64748b">PID     NAME              CPU%    MEM%    STATUS</text>
+    <text x="100" y="805" fill="#c9d1d9">1234    node              45.2    7.3     running</text>
+    <text x="100" y="830" fill="#c9d1d9">2345    postgres          12.3    4.0     running</text>
+    <text x="100" y="855" fill="#c9d1d9">3456    nginx              8.7    1.4     running</text>
+    <text x="100" y="880" fill="#c9d1d9">4567    redis              5.4    2.1     running</text>
+    <text x="100" y="905" fill="#c9d1d9">5678    docker             3.2    2.8     running</text>
+    <text x="100" y="930" fill="#f87171">6789    memory-leak        2.8   45.2     warning</text>
+  </g>
+</svg>

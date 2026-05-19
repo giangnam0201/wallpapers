@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0f172a"/>
+  <!-- Sorting bars -->
+  <g>
+    <rect x="200" y="700" width="40" height="80" fill="#3b82f6" opacity="0.7"/>
+    <rect x="260" y="550" width="40" height="230" fill="#3b82f6" opacity="0.7"/>
+    <rect x="320" y="400" width="40" height="380" fill="#3b82f6" opacity="0.7"/>
+    <rect x="380" y="650" width="40" height="130" fill="#22c55e" opacity="0.9"/>
+    <rect x="440" y="300" width="40" height="480" fill="#3b82f6" opacity="0.7"/>
+    <rect x="500" y="500" width="40" height="280" fill="#ef4444" opacity="0.9"/>
+    <rect x="560" y="200" width="40" height="580" fill="#3b82f6" opacity="0.7"/>
+    <rect x="620" y="350" width="40" height="430" fill="#3b82f6" opacity="0.7"/>
+    <rect x="680" y="600" width="40" height="180" fill="#3b82f6" opacity="0.7"/>
+    <rect x="740" y="150" width="40" height="630" fill="#3b82f6" opacity="0.7"/>
+    <rect x="800" y="450" width="40" height="330" fill="#3b82f6" opacity="0.7"/>
+    <rect x="860" y="250" width="40" height="530" fill="#3b82f6" opacity="0.7"/>
+    <rect x="920" y="500" width="40" height="280" fill="#3b82f6" opacity="0.7"/>
+    <rect x="980" y="350" width="40" height="430" fill="#3b82f6" opacity="0.7"/>
+    <rect x="1040" y="100" width="40" height="680" fill="#3b82f6" opacity="0.7"/>
+    <rect x="1100" y="600" width="40" height="180" fill="#3b82f6" opacity="0.7"/>
+    <rect x="1160" y="450" width="40" height="330" fill="#3b82f6" opacity="0.7"/>
+    <rect x="1220" y="300" width="40" height="480" fill="#3b82f6" opacity="0.7"/>
+    <rect x="1280" y="550" width="40" height="230" fill="#3b82f6" opacity="0.7"/>
+    <rect x="1340" y="200" width="40" height="580" fill="#3b82f6" opacity="0.7"/>
+    <rect x="1400" y="400" width="40" height="380" fill="#3b82f6" opacity="0.7"/>
+    <rect x="1460" y="650" width="40" height="130" fill="#3b82f6" opacity="0.7"/>
+    <rect x="1520" y="150" width="40" height="630" fill="#3b82f6" opacity="0.7"/>
+    <rect x="1580" y="500" width="40" height="280" fill="#3b82f6" opacity="0.7"/>
+    <rect x="1640" y="350" width="40" height="430" fill="#3b82f6" opacity="0.7"/>
+  </g>
+  <!-- Comparison arrows -->
+  <g stroke="#ef4444" stroke-width="2" fill="none">
+    <path d="M520,490 Q520,460 480,460" marker-end="url(#arrow)"/>
+  </g>
+  <!-- Labels -->
+  <text x="960" y="60" font-family="monospace" font-size="24" fill="#e2e8f0" text-anchor="middle">QuickSort - O(n log n)</text>
+  <text x="960" y="870" font-family="monospace" font-size="14" fill="#64748b" text-anchor="middle">pivot: arr[5] | comparing: arr[5] &lt;-&gt; arr[3]</text>
+  <!-- Legend -->
+  <rect x="700" y="910" width="20" height="20" fill="#3b82f6" opacity="0.7"/>
+  <text x="730" y="926" font-family="monospace" font-size="12" fill="#94a3b8">unsorted</text>
+  <rect x="840" y="910" width="20" height="20" fill="#22c55e" opacity="0.9"/>
+  <text x="870" y="926" font-family="monospace" font-size="12" fill="#94a3b8">sorted</text>
+  <rect x="960" y="910" width="20" height="20" fill="#ef4444" opacity="0.9"/>
+  <text x="990" y="926" font-family="monospace" font-size="12" fill="#94a3b8">comparing</text>
+</svg>

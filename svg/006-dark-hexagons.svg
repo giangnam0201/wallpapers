@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="hexBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a"/>
+      <stop offset="100%" style="stop-color:#1a0f2e"/>
+    </linearGradient>
+    <pattern id="hexPattern" width="100" height="173.2" patternUnits="userSpaceOnUse">
+      <polygon points="50,0 100,25 100,75 50,100 0,75 0,25" fill="none" stroke="#7c3aed" stroke-width="0.5" opacity="0.3" transform="translate(0,0)"/>
+      <polygon points="50,86.6 100,111.6 100,161.6 50,186.6 0,161.6 0,111.6" fill="none" stroke="#7c3aed" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#hexBg)"/>
+  <rect width="1920" height="1080" fill="url(#hexPattern)"/>
+  <!-- Highlighted hexagons -->
+  <polygon points="960,440 1010,465 1010,515 960,540 910,515 910,465" fill="none" stroke="#7c3aed" stroke-width="2" opacity="0.8"/>
+  <polygon points="960,440 1010,465 1010,515 960,540 910,515 910,465" fill="#7c3aed" opacity="0.1"/>
+  <polygon points="860,380 910,405 910,455 860,480 810,455 810,405" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="1060,380 1110,405 1110,455 1060,480 1010,455 1010,405" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="960,320 1010,345 1010,395 960,420 910,395 910,345" fill="none" stroke="#c084fc" stroke-width="1" opacity="0.4"/>
+  <polygon points="760,500 810,525 810,575 760,600 710,575 710,525" fill="none" stroke="#a855f7" stroke-width="1" opacity="0.4"/>
+  <polygon points="1160,500 1210,525 1210,575 1160,600 1110,575 1110,525" fill="none" stroke="#a855f7" stroke-width="1" opacity="0.4"/>
+  <!-- Glow center -->
+  <radialGradient id="hexGlow" cx="50%" cy="50%" r="30%">
+    <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.15"/>
+    <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0"/>
+  </radialGradient>
+  <rect width="1920" height="1080" fill="url(#hexGlow)"/>
+</svg>

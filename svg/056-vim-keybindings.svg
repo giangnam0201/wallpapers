@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#1a1b26"/>
+  <g font-family="monospace" text-anchor="middle">
+    <!-- Title -->
+    <text x="960" y="80" font-size="28" fill="#7aa2f7">Vim Cheat Sheet</text>
+    <!-- Movement -->
+    <text x="300" y="160" font-size="16" fill="#bb9af7">-- MOVEMENT --</text>
+    <text x="300" y="200" font-size="14" fill="#9ece6a">h</text><text x="340" y="200" font-size="14" fill="#c0caf5" text-anchor="start">left</text>
+    <text x="300" y="230" font-size="14" fill="#9ece6a">j</text><text x="340" y="230" font-size="14" fill="#c0caf5" text-anchor="start">down</text>
+    <text x="300" y="260" font-size="14" fill="#9ece6a">k</text><text x="340" y="260" font-size="14" fill="#c0caf5" text-anchor="start">up</text>
+    <text x="300" y="290" font-size="14" fill="#9ece6a">l</text><text x="340" y="290" font-size="14" fill="#c0caf5" text-anchor="start">right</text>
+    <text x="300" y="320" font-size="14" fill="#9ece6a">w</text><text x="340" y="320" font-size="14" fill="#c0caf5" text-anchor="start">next word</text>
+    <text x="300" y="350" font-size="14" fill="#9ece6a">b</text><text x="340" y="350" font-size="14" fill="#c0caf5" text-anchor="start">prev word</text>
+    <text x="300" y="380" font-size="14" fill="#9ece6a">gg</text><text x="340" y="380" font-size="14" fill="#c0caf5" text-anchor="start">file start</text>
+    <text x="300" y="410" font-size="14" fill="#9ece6a">G</text><text x="340" y="410" font-size="14" fill="#c0caf5" text-anchor="start">file end</text>
+    <!-- Editing -->
+    <text x="700" y="160" font-size="16" fill="#bb9af7">-- EDITING --</text>
+    <text x="700" y="200" font-size="14" fill="#f7768e">i</text><text x="740" y="200" font-size="14" fill="#c0caf5" text-anchor="start">insert mode</text>
+    <text x="700" y="230" font-size="14" fill="#f7768e">a</text><text x="740" y="230" font-size="14" fill="#c0caf5" text-anchor="start">append</text>
+    <text x="700" y="260" font-size="14" fill="#f7768e">o</text><text x="740" y="260" font-size="14" fill="#c0caf5" text-anchor="start">new line below</text>
+    <text x="700" y="290" font-size="14" fill="#f7768e">dd</text><text x="740" y="290" font-size="14" fill="#c0caf5" text-anchor="start">delete line</text>
+    <text x="700" y="320" font-size="14" fill="#f7768e">yy</text><text x="740" y="320" font-size="14" fill="#c0caf5" text-anchor="start">yank line</text>
+    <text x="700" y="350" font-size="14" fill="#f7768e">p</text><text x="740" y="350" font-size="14" fill="#c0caf5" text-anchor="start">paste</text>
+    <text x="700" y="380" font-size="14" fill="#f7768e">u</text><text x="740" y="380" font-size="14" fill="#c0caf5" text-anchor="start">undo</text>
+    <text x="700" y="410" font-size="14" fill="#f7768e">Ctrl+r</text><text x="760" y="410" font-size="14" fill="#c0caf5" text-anchor="start">redo</text>
+    <!-- Commands -->
+    <text x="1150" y="160" font-size="16" fill="#bb9af7">-- COMMANDS --</text>
+    <text x="1150" y="200" font-size="14" fill="#e0af68">:w</text><text x="1200" y="200" font-size="14" fill="#c0caf5" text-anchor="start">save</text>
+    <text x="1150" y="230" font-size="14" fill="#e0af68">:q</text><text x="1200" y="230" font-size="14" fill="#c0caf5" text-anchor="start">quit</text>
+    <text x="1150" y="260" font-size="14" fill="#e0af68">:wq</text><text x="1200" y="260" font-size="14" fill="#c0caf5" text-anchor="start">save &amp; quit</text>
+    <text x="1150" y="290" font-size="14" fill="#e0af68">:q!</text><text x="1200" y="290" font-size="14" fill="#c0caf5" text-anchor="start">force quit</text>
+    <text x="1150" y="320" font-size="14" fill="#e0af68">/%s/old/new/g</text><text x="1300" y="320" font-size="14" fill="#c0caf5" text-anchor="start">replace all</text>
+    <text x="1150" y="350" font-size="14" fill="#e0af68">/pattern</text><text x="1250" y="350" font-size="14" fill="#c0caf5" text-anchor="start">search</text>
+    <text x="1150" y="380" font-size="14" fill="#e0af68">:set number</text><text x="1290" y="380" font-size="14" fill="#c0caf5" text-anchor="start">line numbers</text>
+    <!-- Visual -->
+    <text x="1550" y="160" font-size="16" fill="#bb9af7">-- VISUAL --</text>
+    <text x="1550" y="200" font-size="14" fill="#73daca">v</text><text x="1590" y="200" font-size="14" fill="#c0caf5" text-anchor="start">visual mode</text>
+    <text x="1550" y="230" font-size="14" fill="#73daca">V</text><text x="1590" y="230" font-size="14" fill="#c0caf5" text-anchor="start">visual line</text>
+    <text x="1550" y="260" font-size="14" fill="#73daca">Ctrl+v</text><text x="1620" y="260" font-size="14" fill="#c0caf5" text-anchor="start">visual block</text>
+    <!-- Bottom status line -->
+    <rect x="0" y="1040" width="1920" height="40" fill="#24283b"/>
+    <text x="50" y="1065" font-size="14" fill="#9ece6a" text-anchor="start">-- NORMAL --</text>
+    <text x="960" y="1065" font-size="14" fill="#565f89">init.lua [+] utf-8 unix LF  42:7</text>
+    <text x="1870" y="1065" font-size="14" fill="#565f89" text-anchor="end">100%</text>
+  </g>
+</svg>

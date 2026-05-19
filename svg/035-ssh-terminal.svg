@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0c0c0c"/>
+  <!-- Terminal window -->
+  <rect x="150" y="60" width="1620" height="960" rx="10" fill="#1a1b26" stroke="#2a2b36" stroke-width="1"/>
+  <rect x="150" y="60" width="1620" height="35" rx="10" fill="#24283b"/>
+  <rect x="150" y="85" width="1620" height="10" fill="#24283b"/>
+  <circle cx="178" cy="78" r="6" fill="#f7768e"/>
+  <circle cx="198" cy="78" r="6" fill="#e0af68"/>
+  <circle cx="218" cy="78" r="6" fill="#9ece6a"/>
+  <text x="960" y="82" font-family="monospace" font-size="12" fill="#565f89" text-anchor="middle">ssh root@production-server — 192.168.1.100</text>
+  <g font-family="monospace" font-size="14">
+    <text x="180" y="130" fill="#f7768e">root@prod</text><text x="270" y="130" fill="#565f89">:</text><text x="280" y="130" fill="#7aa2f7">~</text><text x="292" y="130" fill="#565f89"># </text><text x="310" y="130" fill="#c0caf5">htop</text>
+    <text x="180" y="170" fill="#73daca">  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+</text>
+    <text x="180" y="195" fill="#c0caf5"> 1234 node      20   0  892.4m 234.2m  12.3m S  45.2   3.6   2:34.56</text>
+    <text x="180" y="220" fill="#c0caf5"> 2345 postgres  20   0  456.7m 128.9m   8.2m S  12.3   2.0   1:23.45</text>
+    <text x="180" y="245" fill="#c0caf5"> 3456 nginx     20   0  123.4m  45.6m   4.5m S   8.7   0.7   0:45.67</text>
+    <text x="180" y="270" fill="#c0caf5"> 4567 redis     20   0   89.2m  67.8m   3.2m S   5.4   1.0   0:34.56</text>
+    <text x="180" y="295" fill="#c0caf5"> 5678 docker    20   0  234.5m  89.1m   6.7m S   3.2   1.4   0:23.45</text>
+    <text x="180" y="340" fill="#f7768e">root@prod</text><text x="270" y="340" fill="#565f89">:</text><text x="280" y="340" fill="#7aa2f7">~</text><text x="292" y="340" fill="#565f89"># </text><text x="310" y="340" fill="#c0caf5">df -h</text>
+    <text x="180" y="370" fill="#73daca">Filesystem      Size  Used Avail Use% Mounted on</text>
+    <text x="180" y="395" fill="#c0caf5">/dev/sda1       500G  234G  266G  47% /</text>
+    <text x="180" y="420" fill="#c0caf5">/dev/sdb1       2.0T  1.2T  800G  60% /data</text>
+    <text x="180" y="445" fill="#c0caf5">tmpfs            32G  4.0G   28G  13% /dev/shm</text>
+    <text x="180" y="490" fill="#f7768e">root@prod</text><text x="270" y="490" fill="#565f89">:</text><text x="280" y="490" fill="#7aa2f7">~</text><text x="292" y="490" fill="#565f89"># </text><text x="310" y="490" fill="#c0caf5">systemctl status app.service</text>
+    <text x="180" y="520" fill="#9ece6a">● app.service - Production Application</text>
+    <text x="200" y="545" fill="#c0caf5">Loaded: loaded (/etc/systemd/system/app.service; enabled)</text>
+    <text x="200" y="570" fill="#9ece6a">Active: active (running) since Mon 2024-01-15 10:30:00 UTC; 42 days ago</text>
+    <text x="200" y="595" fill="#c0caf5">Main PID: 1234 (node)</text>
+    <text x="200" y="620" fill="#c0caf5">Memory: 234.2M</text>
+    <text x="200" y="645" fill="#c0caf5">CPU: 45.2%</text>
+    <text x="180" y="690" fill="#f7768e">root@prod</text><text x="270" y="690" fill="#565f89">:</text><text x="280" y="690" fill="#7aa2f7">~</text><text x="292" y="690" fill="#565f89"># </text><text x="310" y="690" fill="#c0caf5">tail -f /var/log/app/access.log</text>
+    <text x="180" y="720" fill="#565f89">[2024-01-15 12:34:56]</text><text x="370" y="720" fill="#9ece6a"> 200</text><text x="405" y="720" fill="#c0caf5"> GET /api/users 12ms</text>
+    <text x="180" y="745" fill="#565f89">[2024-01-15 12:34:57]</text><text x="370" y="745" fill="#9ece6a"> 201</text><text x="405" y="745" fill="#c0caf5"> POST /api/posts 45ms</text>
+    <text x="180" y="770" fill="#565f89">[2024-01-15 12:34:58]</text><text x="370" y="770" fill="#e0af68"> 304</text><text x="405" y="770" fill="#c0caf5"> GET /static/app.js 2ms</text>
+    <text x="180" y="795" fill="#565f89">[2024-01-15 12:34:59]</text><text x="370" y="795" fill="#f7768e"> 500</text><text x="405" y="795" fill="#c0caf5"> POST /api/upload 1234ms</text>
+    <text x="180" y="820" fill="#565f89">[2024-01-15 12:35:00]</text><text x="370" y="820" fill="#9ece6a"> 200</text><text x="405" y="820" fill="#c0caf5"> GET /api/health 1ms</text>
+  </g>
+</svg>

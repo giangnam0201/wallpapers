@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#050510"/>
+  <!-- Large bokeh circles -->
+  <circle cx="200" cy="300" r="80" fill="#6366f1" opacity="0.08"/>
+  <circle cx="500" cy="150" r="120" fill="#a855f7" opacity="0.06"/>
+  <circle cx="900" cy="400" r="150" fill="#06b6d4" opacity="0.07"/>
+  <circle cx="1400" cy="200" r="100" fill="#ec4899" opacity="0.06"/>
+  <circle cx="1700" cy="500" r="130" fill="#6366f1" opacity="0.08"/>
+  <circle cx="300" cy="700" r="110" fill="#10b981" opacity="0.06"/>
+  <circle cx="700" cy="800" r="90" fill="#f59e0b" opacity="0.07"/>
+  <circle cx="1100" cy="700" r="140" fill="#a855f7" opacity="0.06"/>
+  <circle cx="1600" cy="850" r="100" fill="#06b6d4" opacity="0.08"/>
+  <!-- Medium bokeh -->
+  <circle cx="150" cy="500" r="50" fill="#818cf8" opacity="0.1"/>
+  <circle cx="450" cy="450" r="40" fill="#c084fc" opacity="0.08"/>
+  <circle cx="750" cy="250" r="60" fill="#22d3ee" opacity="0.09"/>
+  <circle cx="1050" cy="150" r="45" fill="#f472b6" opacity="0.08"/>
+  <circle cx="1300" cy="500" r="55" fill="#34d399" opacity="0.1"/>
+  <circle cx="1550" cy="350" r="35" fill="#fbbf24" opacity="0.08"/>
+  <circle cx="1800" cy="200" r="50" fill="#818cf8" opacity="0.09"/>
+  <circle cx="400" cy="900" r="45" fill="#c084fc" opacity="0.1"/>
+  <circle cx="850" cy="600" r="40" fill="#22d3ee" opacity="0.08"/>
+  <circle cx="1200" cy="900" r="55" fill="#f472b6" opacity="0.09"/>
+  <!-- Small bokeh -->
+  <circle cx="100" cy="100" r="20" fill="#a5b4fc" opacity="0.15"/>
+  <circle cx="350" cy="600" r="15" fill="#e9d5ff" opacity="0.12"/>
+  <circle cx="600" cy="500" r="25" fill="#a5f3fc" opacity="0.13"/>
+  <circle cx="850" cy="900" r="18" fill="#fce7f3" opacity="0.12"/>
+  <circle cx="1150" cy="400" r="22" fill="#d1fae5" opacity="0.14"/>
+  <circle cx="1400" cy="700" r="20" fill="#fef3c7" opacity="0.12"/>
+  <circle cx="1650" cy="650" r="25" fill="#a5b4fc" opacity="0.15"/>
+  <circle cx="1850" cy="900" r="18" fill="#e9d5ff" opacity="0.12"/>
+  <circle cx="250" cy="950" r="22" fill="#a5f3fc" opacity="0.13"/>
+  <circle cx="960" cy="540" r="20" fill="#fce7f3" opacity="0.14"/>
+</svg>

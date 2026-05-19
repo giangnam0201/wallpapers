@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#050510"/>
+  <!-- Connection lines -->
+  <g stroke="#6366f1" stroke-width="1" opacity="0.3">
+    <line x1="200" y1="300" x2="400" y2="200"/>
+    <line x1="400" y1="200" x2="600" y2="350"/>
+    <line x1="600" y1="350" x2="500" y2="500"/>
+    <line x1="500" y1="500" x2="200" y2="300"/>
+    <line x1="600" y1="350" x2="800" y2="250"/>
+    <line x1="800" y1="250" x2="1000" y2="400"/>
+    <line x1="1000" y1="400" x2="900" y2="600"/>
+    <line x1="900" y1="600" x2="700" y2="550"/>
+    <line x1="700" y1="550" x2="600" y2="350"/>
+    <line x1="1000" y1="400" x2="1200" y2="300"/>
+    <line x1="1200" y1="300" x2="1400" y2="450"/>
+    <line x1="1400" y1="450" x2="1300" y2="600"/>
+    <line x1="1300" y1="600" x2="1100" y2="550"/>
+    <line x1="1100" y1="550" x2="1000" y2="400"/>
+    <line x1="1400" y1="450" x2="1600" y2="350"/>
+    <line x1="1600" y1="350" x2="1750" y2="500"/>
+    <line x1="1750" y1="500" x2="1600" y2="650"/>
+    <line x1="300" y1="700" x2="500" y2="800"/>
+    <line x1="500" y1="800" x2="700" y2="750"/>
+    <line x1="700" y1="750" x2="900" y2="850"/>
+    <line x1="900" y1="850" x2="1100" y2="780"/>
+    <line x1="1100" y1="780" x2="1300" y2="850"/>
+    <line x1="1300" y1="850" x2="1500" y2="750"/>
+    <line x1="1500" y1="750" x2="1700" y2="800"/>
+  </g>
+  <!-- Nodes -->
+  <g fill="#a5b4fc">
+    <circle cx="200" cy="300" r="4"/><circle cx="400" cy="200" r="5"/>
+    <circle cx="600" cy="350" r="6"/><circle cx="500" cy="500" r="4"/>
+    <circle cx="800" cy="250" r="5"/><circle cx="1000" cy="400" r="7"/>
+    <circle cx="900" cy="600" r="4"/><circle cx="700" cy="550" r="4"/>
+    <circle cx="1200" cy="300" r="5"/><circle cx="1400" cy="450" r="6"/>
+    <circle cx="1300" cy="600" r="4"/><circle cx="1100" cy="550" r="4"/>
+    <circle cx="1600" cy="350" r="5"/><circle cx="1750" cy="500" r="4"/>
+    <circle cx="1600" cy="650" r="4"/><circle cx="300" cy="700" r="4"/>
+    <circle cx="500" cy="800" r="5"/><circle cx="700" cy="750" r="4"/>
+    <circle cx="900" cy="850" r="5"/><circle cx="1100" cy="780" r="4"/>
+    <circle cx="1300" cy="850" r="5"/><circle cx="1500" cy="750" r="4"/>
+    <circle cx="1700" cy="800" r="5"/>
+  </g>
+  <!-- Highlight main node -->
+  <circle cx="1000" cy="400" r="12" fill="none" stroke="#818cf8" stroke-width="1" opacity="0.5"/>
+  <circle cx="1000" cy="400" r="20" fill="none" stroke="#6366f1" stroke-width="0.5" opacity="0.3"/>
+  <!-- Background stars -->
+  <g fill="#ffffff" opacity="0.3">
+    <circle cx="50" cy="50" r="1"/><circle cx="150" cy="150" r="0.8"/>
+    <circle cx="1850" cy="100" r="1"/><circle cx="1700" cy="50" r="0.8"/>
+    <circle cx="960" cy="100" r="1"/><circle cx="100" cy="900" r="0.8"/>
+    <circle cx="1800" cy="950" r="1"/><circle cx="50" cy="500" r="0.8"/>
+    <circle cx="1900" cy="600" r="1"/>
+  </g>
+</svg>

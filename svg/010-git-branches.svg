@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0d1117"/>
+  <!-- Branch lines -->
+  <g fill="none" stroke-width="4" stroke-linecap="round">
+    <!-- main branch -->
+    <path d="M200,540 H1720" stroke="#238636" opacity="0.8"/>
+    <!-- feature branch 1 -->
+    <path d="M400,540 Q450,540 500,440 L800,440 Q850,440 900,540" stroke="#1f6feb" opacity="0.7"/>
+    <!-- feature branch 2 -->
+    <path d="M700,540 Q750,540 800,380 L1200,380 Q1250,380 1300,540" stroke="#a371f7" opacity="0.7"/>
+    <!-- hotfix branch -->
+    <path d="M1000,540 Q1050,540 1100,640 L1300,640 Q1350,640 1400,540" stroke="#da3633" opacity="0.7"/>
+    <!-- feature branch 3 -->
+    <path d="M1100,540 Q1150,540 1200,320 L1500,320" stroke="#f0883e" opacity="0.7"/>
+  </g>
+  <!-- Commits on main -->
+  <g>
+    <circle cx="200" cy="540" r="10" fill="#238636"/><circle cx="400" cy="540" r="10" fill="#238636"/>
+    <circle cx="600" cy="540" r="10" fill="#238636"/><circle cx="700" cy="540" r="10" fill="#238636"/>
+    <circle cx="900" cy="540" r="10" fill="#238636"/><circle cx="1000" cy="540" r="10" fill="#238636"/>
+    <circle cx="1100" cy="540" r="10" fill="#238636"/><circle cx="1300" cy="540" r="10" fill="#238636"/>
+    <circle cx="1400" cy="540" r="10" fill="#238636"/><circle cx="1600" cy="540" r="10" fill="#238636"/>
+    <circle cx="1720" cy="540" r="10" fill="#238636"/>
+  </g>
+  <!-- Commits on feature 1 -->
+  <circle cx="600" cy="440" r="8" fill="#1f6feb"/><circle cx="700" cy="440" r="8" fill="#1f6feb"/>
+  <circle cx="800" cy="440" r="8" fill="#1f6feb"/>
+  <!-- Commits on feature 2 -->
+  <circle cx="900" cy="380" r="8" fill="#a371f7"/><circle cx="1050" cy="380" r="8" fill="#a371f7"/>
+  <circle cx="1200" cy="380" r="8" fill="#a371f7"/>
+  <!-- Commits on hotfix -->
+  <circle cx="1150" cy="640" r="8" fill="#da3633"/><circle cx="1250" cy="640" r="8" fill="#da3633"/>
+  <!-- Commits on feature 3 -->
+  <circle cx="1300" cy="320" r="8" fill="#f0883e"/><circle cx="1400" cy="320" r="8" fill="#f0883e"/>
+  <circle cx="1500" cy="320" r="8" fill="#f0883e"/>
+  <!-- Labels -->
+  <g font-family="monospace" font-size="14">
+    <text x="1730" y="545" fill="#238636">main</text>
+    <text x="1510" y="325" fill="#f0883e">feature/api</text>
+    <text x="640" y="425" fill="#1f6feb">feature/ui</text>
+    <text x="1000" y="365" fill="#a371f7">feature/auth</text>
+    <text x="1130" y="670" fill="#da3633">hotfix/bug-123</text>
+  </g>
+  <!-- Header -->
+  <text x="960" y="100" font-family="monospace" font-size="24" fill="#c9d1d9" text-anchor="middle">git log --graph --all --oneline</text>
+</svg>

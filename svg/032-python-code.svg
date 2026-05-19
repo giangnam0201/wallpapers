@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#1e1e2e"/>
+  <g font-family="monospace" font-size="15">
+    <text x="200" y="100" fill="#cba6f7">import</text><text x="265" y="100" fill="#cdd6f4"> asyncio</text>
+    <text x="200" y="125" fill="#cba6f7">from</text><text x="240" y="125" fill="#cdd6f4"> dataclasses </text><text x="365" y="125" fill="#cba6f7">import</text><text x="425" y="125" fill="#cdd6f4"> dataclass, field</text>
+    <text x="200" y="150" fill="#cba6f7">from</text><text x="240" y="150" fill="#cdd6f4"> typing </text><text x="305" y="150" fill="#cba6f7">import</text><text x="365" y="150" fill="#cdd6f4"> Optional, List</text>
+    <text x="200" y="200" fill="#89b4fa">@dataclass</text>
+    <text x="200" y="225" fill="#cba6f7">class</text><text x="250" y="225" fill="#f9e2af"> Pipeline</text><text x="330" y="225" fill="#cdd6f4">:</text>
+    <text x="230" y="255" fill="#6c7086">"""An async data processing pipeline."""</text>
+    <text x="230" y="285" fill="#cdd6f4">name: </text><text x="280" y="285" fill="#89b4fa">str</text>
+    <text x="230" y="310" fill="#cdd6f4">stages: List[callable] = field(default_factory=</text><text x="620" y="310" fill="#89b4fa">list</text><text x="650" y="310" fill="#cdd6f4">)</text>
+    <text x="230" y="335" fill="#cdd6f4">max_retries: </text><text x="350" y="335" fill="#89b4fa">int</text><text x="380" y="335" fill="#cdd6f4"> = </text><text x="400" y="335" fill="#fab387">3</text>
+    <text x="230" y="360" fill="#cdd6f4">timeout: </text><text x="310" y="360" fill="#89b4fa">float</text><text x="355" y="360" fill="#cdd6f4"> = </text><text x="375" y="360" fill="#fab387">30.0</text>
+    <text x="230" y="410" fill="#cba6f7">async def</text><text x="310" y="410" fill="#89dceb"> execute</text><text x="375" y="410" fill="#cdd6f4">(self, data: </text><text x="480" y="410" fill="#89b4fa">dict</text><text x="510" y="410" fill="#cdd6f4">) -&gt; Optional[</text><text x="620" y="410" fill="#89b4fa">dict</text><text x="660" y="410" fill="#cdd6f4">]:</text>
+    <text x="260" y="440" fill="#cdd6f4">result = data</text>
+    <text x="260" y="470" fill="#cba6f7">for</text><text x="295" y="470" fill="#cdd6f4"> stage </text><text x="345" y="470" fill="#cba6f7">in</text><text x="365" y="470" fill="#cdd6f4"> self.stages:</text>
+    <text x="290" y="500" fill="#cba6f7">try</text><text x="315" y="500" fill="#cdd6f4">:</text>
+    <text x="320" y="530" fill="#cdd6f4">result = </text><text x="400" y="530" fill="#cba6f7">await</text><text x="450" y="530" fill="#cdd6f4"> asyncio.wait_for(</text>
+    <text x="350" y="560" fill="#cdd6f4">stage(result),</text>
+    <text x="350" y="590" fill="#cdd6f4">timeout=self.timeout</text>
+    <text x="320" y="620" fill="#cdd6f4">)</text>
+    <text x="290" y="650" fill="#cba6f7">except</text><text x="345" y="650" fill="#f9e2af"> asyncio.TimeoutError</text><text x="530" y="650" fill="#cdd6f4">:</text>
+    <text x="320" y="680" fill="#cdd6f4">logger.error(</text><text x="420" y="680" fill="#a6e3a1">f"Stage {stage.__name__} timed out"</text><text x="690" y="680" fill="#cdd6f4">)</text>
+    <text x="320" y="710" fill="#cba6f7">return</text><text x="370" y="710" fill="#cba6f7"> None</text>
+    <text x="290" y="740" fill="#cba6f7">except</text><text x="345" y="740" fill="#f9e2af"> Exception</text><text x="420" y="740" fill="#cba6f7"> as</text><text x="445" y="740" fill="#cdd6f4"> e:</text>
+    <text x="320" y="770" fill="#cdd6f4">logger.exception(</text><text x="455" y="770" fill="#a6e3a1">f"Pipeline failed: {e}"</text><text x="640" y="770" fill="#cdd6f4">)</text>
+    <text x="320" y="800" fill="#cba6f7">raise</text>
+    <text x="260" y="840" fill="#cba6f7">return</text><text x="310" y="840" fill="#cdd6f4"> result</text>
+  </g>
+</svg>

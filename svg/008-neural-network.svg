@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0a0a1a"/>
+  <!-- Connections -->
+  <g stroke="#6366f1" stroke-width="1" opacity="0.3">
+    <line x1="300" y1="200" x2="600" y2="150"/>
+    <line x1="300" y1="200" x2="600" y2="350"/>
+    <line x1="300" y1="200" x2="600" y2="540"/>
+    <line x1="300" y1="400" x2="600" y2="150"/>
+    <line x1="300" y1="400" x2="600" y2="350"/>
+    <line x1="300" y1="400" x2="600" y2="540"/>
+    <line x1="300" y1="400" x2="600" y2="730"/>
+    <line x1="300" y1="600" x2="600" y2="350"/>
+    <line x1="300" y1="600" x2="600" y2="540"/>
+    <line x1="300" y1="600" x2="600" y2="730"/>
+    <line x1="300" y1="600" x2="600" y2="920"/>
+    <line x1="300" y1="800" x2="600" y2="540"/>
+    <line x1="300" y1="800" x2="600" y2="730"/>
+    <line x1="300" y1="800" x2="600" y2="920"/>
+    <line x1="600" y1="150" x2="960" y2="270"/>
+    <line x1="600" y1="150" x2="960" y2="450"/>
+    <line x1="600" y1="350" x2="960" y2="270"/>
+    <line x1="600" y1="350" x2="960" y2="450"/>
+    <line x1="600" y1="350" x2="960" y2="630"/>
+    <line x1="600" y1="540" x2="960" y2="450"/>
+    <line x1="600" y1="540" x2="960" y2="630"/>
+    <line x1="600" y1="540" x2="960" y2="810"/>
+    <line x1="600" y1="730" x2="960" y2="630"/>
+    <line x1="600" y1="730" x2="960" y2="810"/>
+    <line x1="600" y1="920" x2="960" y2="810"/>
+    <line x1="960" y1="270" x2="1320" y2="200"/>
+    <line x1="960" y1="270" x2="1320" y2="440"/>
+    <line x1="960" y1="270" x2="1320" y2="680"/>
+    <line x1="960" y1="450" x2="1320" y2="200"/>
+    <line x1="960" y1="450" x2="1320" y2="440"/>
+    <line x1="960" y1="450" x2="1320" y2="680"/>
+    <line x1="960" y1="450" x2="1320" y2="880"/>
+    <line x1="960" y1="630" x2="1320" y2="440"/>
+    <line x1="960" y1="630" x2="1320" y2="680"/>
+    <line x1="960" y1="630" x2="1320" y2="880"/>
+    <line x1="960" y1="810" x2="1320" y2="680"/>
+    <line x1="960" y1="810" x2="1320" y2="880"/>
+    <line x1="1320" y1="200" x2="1620" y2="400"/>
+    <line x1="1320" y1="440" x2="1620" y2="400"/>
+    <line x1="1320" y1="440" x2="1620" y2="680"/>
+    <line x1="1320" y1="680" x2="1620" y2="400"/>
+    <line x1="1320" y1="680" x2="1620" y2="680"/>
+    <line x1="1320" y1="880" x2="1620" y2="680"/>
+  </g>
+  <!-- Nodes - Input layer -->
+  <g>
+    <circle cx="300" cy="200" r="20" fill="#1e1b4b" stroke="#6366f1" stroke-width="2"/>
+    <circle cx="300" cy="400" r="20" fill="#1e1b4b" stroke="#6366f1" stroke-width="2"/>
+    <circle cx="300" cy="600" r="20" fill="#1e1b4b" stroke="#6366f1" stroke-width="2"/>
+    <circle cx="300" cy="800" r="20" fill="#1e1b4b" stroke="#6366f1" stroke-width="2"/>
+  </g>
+  <!-- Hidden layer 1 -->
+  <g>
+    <circle cx="600" cy="150" r="18" fill="#1e1b4b" stroke="#818cf8" stroke-width="2"/>
+    <circle cx="600" cy="350" r="18" fill="#1e1b4b" stroke="#818cf8" stroke-width="2"/>
+    <circle cx="600" cy="540" r="18" fill="#312e81" stroke="#818cf8" stroke-width="2"/>
+    <circle cx="600" cy="730" r="18" fill="#1e1b4b" stroke="#818cf8" stroke-width="2"/>
+    <circle cx="600" cy="920" r="18" fill="#1e1b4b" stroke="#818cf8" stroke-width="2"/>
+  </g>
+  <!-- Hidden layer 2 -->
+  <g>
+    <circle cx="960" cy="270" r="18" fill="#1e1b4b" stroke="#a5b4fc" stroke-width="2"/>
+    <circle cx="960" cy="450" r="18" fill="#312e81" stroke="#a5b4fc" stroke-width="2"/>
+    <circle cx="960" cy="630" r="18" fill="#312e81" stroke="#a5b4fc" stroke-width="2"/>
+    <circle cx="960" cy="810" r="18" fill="#1e1b4b" stroke="#a5b4fc" stroke-width="2"/>
+  </g>
+  <!-- Hidden layer 3 -->
+  <g>
+    <circle cx="1320" cy="200" r="18" fill="#1e1b4b" stroke="#c7d2fe" stroke-width="2"/>
+    <circle cx="1320" cy="440" r="18" fill="#312e81" stroke="#c7d2fe" stroke-width="2"/>
+    <circle cx="1320" cy="680" r="18" fill="#1e1b4b" stroke="#c7d2fe" stroke-width="2"/>
+    <circle cx="1320" cy="880" r="18" fill="#1e1b4b" stroke="#c7d2fe" stroke-width="2"/>
+  </g>
+  <!-- Output layer -->
+  <g>
+    <circle cx="1620" cy="400" r="22" fill="#312e81" stroke="#e0e7ff" stroke-width="2.5"/>
+    <circle cx="1620" cy="680" r="22" fill="#312e81" stroke="#e0e7ff" stroke-width="2.5"/>
+  </g>
+  <!-- Labels -->
+  <text x="250" y="1050" font-family="monospace" font-size="14" fill="#6366f1" opacity="0.6">Input</text>
+  <text x="550" y="1050" font-family="monospace" font-size="14" fill="#818cf8" opacity="0.6">Hidden 1</text>
+  <text x="910" y="1050" font-family="monospace" font-size="14" fill="#a5b4fc" opacity="0.6">Hidden 2</text>
+  <text x="1270" y="1050" font-family="monospace" font-size="14" fill="#c7d2fe" opacity="0.6">Hidden 3</text>
+  <text x="1580" y="1050" font-family="monospace" font-size="14" fill="#e0e7ff" opacity="0.6">Output</text>
+</svg>

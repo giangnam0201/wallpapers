@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0d1117"/>
+  <!-- Split view divider -->
+  <line x1="960" y1="0" x2="960" y2="1080" stroke="#30363d" stroke-width="2"/>
+  <!-- Left: Raw markdown -->
+  <rect x="40" y="40" width="880" height="1000" rx="8" fill="#161b22"/>
+  <text x="480" y="30" font-family="monospace" font-size="12" fill="#8b949e" text-anchor="middle">MARKDOWN</text>
+  <g font-family="monospace" font-size="14">
+    <text x="80" y="90" fill="#79c0ff"># Project Architecture</text>
+    <text x="80" y="130" fill="#c9d1d9">## Overview</text>
+    <text x="80" y="170" fill="#c9d1d9">This project uses a **microservices** architecture</text>
+    <text x="80" y="195" fill="#c9d1d9">with the following components:</text>
+    <text x="80" y="240" fill="#c9d1d9">- `api-gateway` - Entry point for all requests</text>
+    <text x="80" y="265" fill="#c9d1d9">- `auth-service` - JWT authentication</text>
+    <text x="80" y="290" fill="#c9d1d9">- `user-service` - User CRUD operations</text>
+    <text x="80" y="315" fill="#c9d1d9">- `notification-service` - Email/SMS</text>
+    <text x="80" y="360" fill="#c9d1d9">## Quick Start</text>
+    <text x="80" y="400" fill="#c9d1d9">```bash</text>
+    <text x="80" y="425" fill="#a5d6ff">git clone https://github.com/user/project</text>
+    <text x="80" y="450" fill="#a5d6ff">cd project</text>
+    <text x="80" y="475" fill="#a5d6ff">docker compose up -d</text>
+    <text x="80" y="500" fill="#c9d1d9">```</text>
+    <text x="80" y="545" fill="#c9d1d9">## API Reference</text>
+    <text x="80" y="585" fill="#c9d1d9">| Method | Endpoint | Description |</text>
+    <text x="80" y="610" fill="#c9d1d9">|--------|----------|-------------|</text>
+    <text x="80" y="635" fill="#c9d1d9">| GET    | /users   | List users  |</text>
+    <text x="80" y="660" fill="#c9d1d9">| POST   | /users   | Create user |</text>
+    <text x="80" y="710" fill="#c9d1d9">&gt; **Note:** All endpoints require auth token</text>
+  </g>
+  <!-- Right: Rendered preview -->
+  <rect x="1000" y="40" width="880" height="1000" rx="8" fill="#0d1117"/>
+  <text x="1440" y="30" font-family="monospace" font-size="12" fill="#8b949e" text-anchor="middle">PREVIEW</text>
+  <g font-family="sans-serif">
+    <text x="1040" y="100" font-size="28" fill="#e6edf3" font-weight="bold">Project Architecture</text>
+    <line x1="1040" y1="110" x2="1840" y2="110" stroke="#30363d" stroke-width="1"/>
+    <text x="1040" y="155" font-size="20" fill="#e6edf3" font-weight="bold">Overview</text>
+    <text x="1040" y="185" font-size="14" fill="#c9d1d9">This project uses a </text><text x="1205" y="185" font-size="14" fill="#e6edf3" font-weight="bold">microservices</text><text x="1310" y="185" font-size="14" fill="#c9d1d9"> architecture</text>
+    <text x="1040" y="205" font-size="14" fill="#c9d1d9">with the following components:</text>
+    <circle cx="1060" cy="238" r="3" fill="#c9d1d9"/>
+    <text x="1080" y="243" font-size="14" fill="#c9d1d9">api-gateway</text><text x="1175" y="243" font-size="14" fill="#8b949e"> - Entry point for all requests</text>
+    <circle cx="1060" cy="263" r="3" fill="#c9d1d9"/>
+    <text x="1080" y="268" font-size="14" fill="#c9d1d9">auth-service</text><text x="1180" y="268" font-size="14" fill="#8b949e"> - JWT authentication</text>
+    <circle cx="1060" cy="288" r="3" fill="#c9d1d9"/>
+    <text x="1080" y="293" font-size="14" fill="#c9d1d9">user-service</text><text x="1180" y="293" font-size="14" fill="#8b949e"> - User CRUD operations</text>
+    <circle cx="1060" cy="313" r="3" fill="#c9d1d9"/>
+    <text x="1080" y="318" font-size="14" fill="#c9d1d9">notification-service</text><text x="1250" y="318" font-size="14" fill="#8b949e"> - Email/SMS</text>
+  </g>
+</svg>

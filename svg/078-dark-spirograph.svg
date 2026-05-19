@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#030712"/>
+  <g fill="none" stroke-width="0.8" transform="translate(960,540)">
+    <ellipse rx="300" ry="200" stroke="#6366f1" opacity="0.4" transform="rotate(0)"/>
+    <ellipse rx="300" ry="200" stroke="#6366f1" opacity="0.4" transform="rotate(15)"/>
+    <ellipse rx="300" ry="200" stroke="#818cf8" opacity="0.35" transform="rotate(30)"/>
+    <ellipse rx="300" ry="200" stroke="#818cf8" opacity="0.35" transform="rotate(45)"/>
+    <ellipse rx="300" ry="200" stroke="#a5b4fc" opacity="0.3" transform="rotate(60)"/>
+    <ellipse rx="300" ry="200" stroke="#a5b4fc" opacity="0.3" transform="rotate(75)"/>
+    <ellipse rx="300" ry="200" stroke="#c7d2fe" opacity="0.25" transform="rotate(90)"/>
+    <ellipse rx="300" ry="200" stroke="#c7d2fe" opacity="0.25" transform="rotate(105)"/>
+    <ellipse rx="300" ry="200" stroke="#e0e7ff" opacity="0.2" transform="rotate(120)"/>
+    <ellipse rx="300" ry="200" stroke="#e0e7ff" opacity="0.2" transform="rotate(135)"/>
+    <ellipse rx="300" ry="200" stroke="#6366f1" opacity="0.15" transform="rotate(150)"/>
+    <ellipse rx="300" ry="200" stroke="#6366f1" opacity="0.15" transform="rotate(165)"/>
+  </g>
+</svg>

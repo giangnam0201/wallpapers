@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#020208"/>
+  <defs>
+    <radialGradient id="galCore" cx="50%" cy="50%" r="15%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#fef3c7;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <!-- Spiral arms -->
+  <g fill="none" stroke-width="2" opacity="0.3">
+    <path d="M960,540 Q1100,400 1200,500 Q1300,600 1150,700 Q1000,800 850,700 Q700,600 800,450 Q900,300 1100,350 Q1300,400 1350,550 Q1400,700 1200,800 Q1000,900 800,780" stroke="#a78bfa"/>
+    <path d="M960,540 Q820,680 720,580 Q620,480 770,380 Q920,280 1070,380 Q1220,480 1120,630 Q1020,780 870,750 Q720,720 680,580 Q640,440 780,350 Q920,260 1100,320" stroke="#67e8f9"/>
+  </g>
+  <g fill="none" stroke-width="1" opacity="0.2">
+    <path d="M960,540 Q1050,450 1130,490 Q1210,530 1170,620 Q1130,710 1040,690 Q950,670 960,590 Q970,510 1050,490 Q1130,470 1180,540 Q1230,610 1180,680" stroke="#c4b5fd"/>
+    <path d="M960,540 Q870,630 790,590 Q710,550 750,460 Q790,370 880,390 Q970,410 960,490 Q950,570 870,570 Q790,570 760,510 Q730,450 790,400" stroke="#a5f3fc"/>
+  </g>
+  <!-- Core glow -->
+  <circle cx="960" cy="540" r="200" fill="url(#galCore)"/>
+  <!-- Stars -->
+  <g fill="#ffffff" opacity="0.5">
+    <circle cx="300" cy="150" r="1"/><circle cx="600" cy="200" r="0.8"/><circle cx="1400" cy="100" r="1.2"/>
+    <circle cx="1700" cy="250" r="1"/><circle cx="150" cy="800" r="0.8"/><circle cx="500" cy="900" r="1"/>
+    <circle cx="1500" cy="850" r="1.2"/><circle cx="1800" cy="700" r="0.8"/><circle cx="100" cy="400" r="1"/>
+    <circle cx="1850" cy="450" r="1"/><circle cx="400" cy="500" r="0.8"/><circle cx="1600" cy="500" r="1"/>
+  </g>
+</svg>

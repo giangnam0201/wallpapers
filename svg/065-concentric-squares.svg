@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#030712"/>
+  <g fill="none" stroke-width="1" transform="translate(960,540)">
+    <rect x="-30" y="-30" width="60" height="60" stroke="#6366f1" opacity="0.9"/>
+    <rect x="-60" y="-60" width="120" height="120" stroke="#6366f1" opacity="0.8"/>
+    <rect x="-100" y="-100" width="200" height="200" stroke="#818cf8" opacity="0.7"/>
+    <rect x="-150" y="-150" width="300" height="300" stroke="#818cf8" opacity="0.6"/>
+    <rect x="-210" y="-210" width="420" height="420" stroke="#a5b4fc" opacity="0.5"/>
+    <rect x="-280" y="-280" width="560" height="560" stroke="#a5b4fc" opacity="0.4"/>
+    <rect x="-360" y="-360" width="720" height="720" stroke="#c7d2fe" opacity="0.3"/>
+    <rect x="-450" y="-450" width="900" height="900" stroke="#c7d2fe" opacity="0.2"/>
+    <rect x="-540" y="-540" width="1080" height="1080" stroke="#e0e7ff" opacity="0.15"/>
+    <rect x="-640" y="-540" width="1280" height="1080" stroke="#e0e7ff" opacity="0.1"/>
+  </g>
+  <!-- Rotated set -->
+  <g fill="none" stroke-width="0.5" transform="translate(960,540) rotate(45)">
+    <rect x="-40" y="-40" width="80" height="80" stroke="#ec4899" opacity="0.5"/>
+    <rect x="-80" y="-80" width="160" height="160" stroke="#ec4899" opacity="0.4"/>
+    <rect x="-130" y="-130" width="260" height="260" stroke="#f472b6" opacity="0.3"/>
+    <rect x="-190" y="-190" width="380" height="380" stroke="#f472b6" opacity="0.2"/>
+    <rect x="-260" y="-260" width="520" height="520" stroke="#fce7f3" opacity="0.15"/>
+    <rect x="-340" y="-340" width="680" height="680" stroke="#fce7f3" opacity="0.1"/>
+  </g>
+</svg>

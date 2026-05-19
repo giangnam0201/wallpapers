@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0f172a"/>
+  <!-- Binary Tree -->
+  <text x="400" y="60" font-family="monospace" font-size="16" fill="#94a3b8" text-anchor="middle">Binary Search Tree</text>
+  <g stroke="#6366f1" stroke-width="1.5" opacity="0.5">
+    <line x1="400" y1="110" x2="250" y2="190"/><line x1="400" y1="110" x2="550" y2="190"/>
+    <line x1="250" y1="210" x2="175" y2="290"/><line x1="250" y1="210" x2="325" y2="290"/>
+    <line x1="550" y1="210" x2="475" y2="290"/><line x1="550" y1="210" x2="625" y2="290"/>
+  </g>
+  <g font-family="monospace" font-size="14" text-anchor="middle">
+    <circle cx="400" cy="100" r="20" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+    <text x="400" y="105" fill="#a5b4fc">8</text>
+    <circle cx="250" cy="200" r="20" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+    <text x="250" y="205" fill="#a5b4fc">4</text>
+    <circle cx="550" cy="200" r="20" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+    <text x="550" y="205" fill="#a5b4fc">12</text>
+    <circle cx="175" cy="300" r="20" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+    <text x="175" y="305" fill="#a5b4fc">2</text>
+    <circle cx="325" cy="300" r="20" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+    <text x="325" y="305" fill="#a5b4fc">6</text>
+    <circle cx="475" cy="300" r="20" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+    <text x="475" y="305" fill="#a5b4fc">10</text>
+    <circle cx="625" cy="300" r="20" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+    <text x="625" y="305" fill="#a5b4fc">14</text>
+  </g>
+  <!-- Linked List -->
+  <text x="400" y="430" font-family="monospace" font-size="16" fill="#94a3b8" text-anchor="middle">Linked List</text>
+  <g>
+    <rect x="100" y="460" width="80" height="40" rx="4" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="140" y="485" font-family="monospace" font-size="13" fill="#4ade80" text-anchor="middle">H</text>
+    <line x1="180" y1="480" x2="230" y2="480" stroke="#22c55e" stroke-width="1.5" marker-end="url(#arr)"/>
+    <rect x="230" y="460" width="80" height="40" rx="4" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="270" y="485" font-family="monospace" font-size="13" fill="#4ade80" text-anchor="middle">3</text>
+    <line x1="310" y1="480" x2="360" y2="480" stroke="#22c55e" stroke-width="1.5"/>
+    <rect x="360" y="460" width="80" height="40" rx="4" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="400" y="485" font-family="monospace" font-size="13" fill="#4ade80" text-anchor="middle">7</text>
+    <line x1="440" y1="480" x2="490" y2="480" stroke="#22c55e" stroke-width="1.5"/>
+    <rect x="490" y="460" width="80" height="40" rx="4" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="530" y="485" font-family="monospace" font-size="13" fill="#4ade80" text-anchor="middle">1</text>
+    <line x1="570" y1="480" x2="620" y2="480" stroke="#22c55e" stroke-width="1.5"/>
+    <rect x="620" y="460" width="80" height="40" rx="4" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="660" y="485" font-family="monospace" font-size="13" fill="#4ade80" text-anchor="middle">∅</text>
+  </g>
+  <!-- Stack -->
+  <text x="1400" y="60" font-family="monospace" font-size="16" fill="#94a3b8" text-anchor="middle">Stack (LIFO)</text>
+  <g>
+    <rect x="1330" y="90" width="140" height="40" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="1400" y="115" font-family="monospace" font-size="13" fill="#fbbf24" text-anchor="middle">pop() ←</text>
+    <rect x="1330" y="140" width="140" height="40" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="1400" y="165" font-family="monospace" font-size="13" fill="#fbbf24" text-anchor="middle">"world"</text>
+    <rect x="1330" y="190" width="140" height="40" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="1400" y="215" font-family="monospace" font-size="13" fill="#fbbf24" text-anchor="middle">"hello"</text>
+    <rect x="1330" y="240" width="140" height="40" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="1400" y="265" font-family="monospace" font-size="13" fill="#fbbf24" text-anchor="middle">42</text>
+  </g>
+  <!-- Hash Map -->
+  <text x="1400" y="430" font-family="monospace" font-size="16" fill="#94a3b8" text-anchor="middle">HashMap</text>
+  <g font-family="monospace" font-size="12">
+    <rect x="1280" y="450" width="60" height="30" rx="4" fill="#1e293b" stroke="#a855f7" stroke-width="1"/>
+    <text x="1310" y="470" fill="#c084fc" text-anchor="middle">0</text>
+    <rect x="1350" y="450" width="140" height="30" rx="4" fill="#1e293b" stroke="#a855f7" stroke-width="1"/>
+    <text x="1420" y="470" fill="#e9d5ff" text-anchor="middle">"name" → "dev"</text>
+    <rect x="1280" y="490" width="60" height="30" rx="4" fill="#1e293b" stroke="#a855f7" stroke-width="1"/>
+    <text x="1310" y="510" fill="#c084fc" text-anchor="middle">1</text>
+    <rect x="1350" y="490" width="140" height="30" rx="4" fill="#334155"/>
+    <text x="1420" y="510" fill="#64748b" text-anchor="middle">empty</text>
+    <rect x="1280" y="530" width="60" height="30" rx="4" fill="#1e293b" stroke="#a855f7" stroke-width="1"/>
+    <text x="1310" y="550" fill="#c084fc" text-anchor="middle">2</text>
+    <rect x="1350" y="530" width="140" height="30" rx="4" fill="#1e293b" stroke="#a855f7" stroke-width="1"/>
+    <text x="1420" y="550" fill="#e9d5ff" text-anchor="middle">"age" → 28</text>
+    <rect x="1280" y="570" width="60" height="30" rx="4" fill="#1e293b" stroke="#a855f7" stroke-width="1"/>
+    <text x="1310" y="590" fill="#c084fc" text-anchor="middle">3</text>
+    <rect x="1350" y="570" width="140" height="30" rx="4" fill="#1e293b" stroke="#a855f7" stroke-width="1"/>
+    <text x="1420" y="590" fill="#e9d5ff" text-anchor="middle">"lang" → "ts"</text>
+  </g>
+</svg>

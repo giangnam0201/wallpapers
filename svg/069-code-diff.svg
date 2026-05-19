@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0d1117"/>
+  <!-- Diff header -->
+  <rect x="100" y="60" width="1720" height="40" rx="8" fill="#161b22"/>
+  <text x="130" y="85" font-family="monospace" font-size="13" fill="#c9d1d9">src/auth/middleware.ts</text>
+  <text x="1700" y="85" font-family="monospace" font-size="13" fill="#8b949e" text-anchor="end">+12 -5</text>
+  <!-- Diff content -->
+  <g font-family="monospace" font-size="13">
+    <!-- Unchanged -->
+    <rect x="100" y="110" width="1720" height="24" fill="#0d1117"/>
+    <text x="120" y="127" fill="#8b949e">  1</text><text x="180" y="127" fill="#c9d1d9">import { Request, Response, NextFunction } from 'express';</text>
+    <rect x="100" y="134" width="1720" height="24" fill="#0d1117"/>
+    <text x="120" y="151" fill="#8b949e">  2</text><text x="180" y="151" fill="#c9d1d9">import { verify } from 'jsonwebtoken';</text>
+    <!-- Removed lines -->
+    <rect x="100" y="170" width="1720" height="24" fill="#3d1f1f"/>
+    <text x="120" y="187" fill="#f85149">- 3</text><text x="180" y="187" fill="#ffa198">import { SECRET } from './config';</text>
+    <rect x="100" y="194" width="1720" height="24" fill="#3d1f1f"/>
+    <text x="120" y="211" fill="#f85149">- 4</text><text x="180" y="211" fill="#ffa198">const JWT_SECRET = SECRET;</text>
+    <!-- Added lines -->
+    <rect x="100" y="230" width="1720" height="24" fill="#1a3d2e"/>
+    <text x="120" y="247" fill="#3fb950">+ 3</text><text x="180" y="247" fill="#aff5b4">import { config } from './config';</text>
+    <rect x="100" y="254" width="1720" height="24" fill="#1a3d2e"/>
+    <text x="120" y="271" fill="#3fb950">+ 4</text><text x="180" y="271" fill="#aff5b4">import { UnauthorizedError } from './errors';</text>
+    <rect x="100" y="278" width="1720" height="24" fill="#1a3d2e"/>
+    <text x="120" y="295" fill="#3fb950">+ 5</text><text x="180" y="295" fill="#aff5b4">import { logger } from '../utils/logger';</text>
+    <!-- Unchanged -->
+    <rect x="100" y="310" width="1720" height="24" fill="#0d1117"/>
+    <text x="120" y="327" fill="#8b949e">  6</text>
+    <rect x="100" y="334" width="1720" height="24" fill="#0d1117"/>
+    <text x="120" y="351" fill="#8b949e">  7</text><text x="180" y="351" fill="#c9d1d9">export const authMiddleware = (</text>
+    <!-- Removed -->
+    <rect x="100" y="370" width="1720" height="24" fill="#3d1f1f"/>
+    <text x="120" y="387" fill="#f85149">- 8</text><text x="180" y="387" fill="#ffa198">  req: Request, res: Response, next: NextFunction</text>
+    <rect x="100" y="394" width="1720" height="24" fill="#3d1f1f"/>
+    <text x="120" y="411" fill="#f85149">- 9</text><text x="180" y="411" fill="#ffa198">) => {</text>
+    <!-- Added -->
+    <rect x="100" y="430" width="1720" height="24" fill="#1a3d2e"/>
+    <text x="120" y="447" fill="#3fb950">+ 8</text><text x="180" y="447" fill="#aff5b4">  req: Request,</text>
+    <rect x="100" y="454" width="1720" height="24" fill="#1a3d2e"/>
+    <text x="120" y="471" fill="#3fb950">+ 9</text><text x="180" y="471" fill="#aff5b4">  res: Response,</text>
+    <rect x="100" y="478" width="1720" height="24" fill="#1a3d2e"/>
+    <text x="120" y="495" fill="#3fb950">+10</text><text x="180" y="495" fill="#aff5b4">  next: NextFunction</text>
+    <rect x="100" y="502" width="1720" height="24" fill="#1a3d2e"/>
+    <text x="120" y="519" fill="#3fb950">+11</text><text x="180" y="519" fill="#aff5b4">): void => {</text>
+    <!-- More unchanged -->
+    <rect x="100" y="546" width="1720" height="24" fill="#0d1117"/>
+    <text x="120" y="563" fill="#8b949e"> 12</text><text x="180" y="563" fill="#c9d1d9">  const token = req.headers.authorization?.split(' ')[1];</text>
+    <rect x="100" y="570" width="1720" height="24" fill="#0d1117"/>
+    <text x="120" y="587" fill="#8b949e"> 13</text>
+    <!-- Removed -->
+    <rect x="100" y="606" width="1720" height="24" fill="#3d1f1f"/>
+    <text x="120" y="623" fill="#f85149">-14</text><text x="180" y="623" fill="#ffa198">  if (!token) return res.status(401).json({ error: 'No token' });</text>
+    <!-- Added -->
+    <rect x="100" y="642" width="1720" height="24" fill="#1a3d2e"/>
+    <text x="120" y="659" fill="#3fb950">+14</text><text x="180" y="659" fill="#aff5b4">  if (!token) {</text>
+    <rect x="100" y="666" width="1720" height="24" fill="#1a3d2e"/>
+    <text x="120" y="683" fill="#3fb950">+15</text><text x="180" y="683" fill="#aff5b4">    logger.warn('Auth attempt without token', { ip: req.ip });</text>
+    <rect x="100" y="690" width="1720" height="24" fill="#1a3d2e"/>
+    <text x="120" y="707" fill="#3fb950">+16</text><text x="180" y="707" fill="#aff5b4">    throw new UnauthorizedError('Authentication required');</text>
+    <rect x="100" y="714" width="1720" height="24" fill="#1a3d2e"/>
+    <text x="120" y="731" fill="#3fb950">+17</text><text x="180" y="731" fill="#aff5b4">  }</text>
+  </g>
+</svg>

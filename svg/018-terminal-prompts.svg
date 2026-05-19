@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#1a1b26"/>
+  <g font-family="monospace" font-size="15">
+    <!-- Prompt 1 - Bash -->
+    <text x="100" y="100" fill="#7aa2f7">┌──(</text><text x="152" y="100" fill="#bb9af7">dev@machine</text><text x="262" y="100" fill="#7aa2f7">)-[</text><text x="296" y="100" fill="#e0af68">~/projects</text><text x="392" y="100" fill="#7aa2f7">]</text>
+    <text x="100" y="125" fill="#7aa2f7">└─$</text><text x="140" y="125" fill="#c0caf5"> npm run build</text>
+    <text x="100" y="155" fill="#9ece6a">✓ Compiled successfully in 2.4s</text>
+    <!-- Prompt 2 - Zsh -->
+    <text x="100" y="210" fill="#bb9af7">❯</text><text x="120" y="210" fill="#c0caf5"> git status</text>
+    <text x="100" y="240" fill="#9ece6a">On branch main</text>
+    <text x="100" y="265" fill="#c0caf5">Changes to be committed:</text>
+    <text x="120" y="290" fill="#9ece6a">  new file:   src/app.tsx</text>
+    <text x="120" y="315" fill="#9ece6a">  modified:   package.json</text>
+    <!-- Prompt 3 - Fish -->
+    <text x="100" y="380" fill="#7aa2f7">fish</text><text x="145" y="380" fill="#c0caf5"> </text><text x="155" y="380" fill="#e0af68">~/code</text><text x="215" y="380" fill="#c0caf5"> (main)</text><text x="285" y="380" fill="#bb9af7"> ❯</text><text x="305" y="380" fill="#c0caf5"> cargo build --release</text>
+    <text x="100" y="410" fill="#c0caf5">   Compiling myapp v0.1.0</text>
+    <text x="100" y="435" fill="#9ece6a">    Finished release [optimized] target(s) in 12.34s</text>
+    <!-- Prompt 4 - Powershell style -->
+    <text x="100" y="500" fill="#7aa2f7">PS C:\Dev\Project&gt;</text><text x="290" y="500" fill="#c0caf5"> docker compose up -d</text>
+    <text x="100" y="530" fill="#c0caf5">[+] Running 5/5</text>
+    <text x="100" y="555" fill="#9ece6a"> ✔ Container app-db-1      Started</text>
+    <text x="100" y="580" fill="#9ece6a"> ✔ Container app-redis-1   Started</text>
+    <text x="100" y="605" fill="#9ece6a"> ✔ Container app-api-1     Started</text>
+    <text x="100" y="630" fill="#9ece6a"> ✔ Container app-web-1     Started</text>
+    <text x="100" y="655" fill="#9ece6a"> ✔ Container app-nginx-1   Started</text>
+    <!-- Prompt 5 -->
+    <text x="100" y="720" fill="#bb9af7">λ</text><text x="120" y="720" fill="#c0caf5"> python manage.py migrate</text>
+    <text x="100" y="750" fill="#c0caf5">Operations to perform:</text>
+    <text x="100" y="775" fill="#c0caf5">  Apply all migrations: admin, auth, contenttypes, sessions</text>
+    <text x="100" y="800" fill="#9ece6a">  Applying contenttypes.0001_initial... OK</text>
+    <text x="100" y="825" fill="#9ece6a">  Applying auth.0001_initial... OK</text>
+    <text x="100" y="850" fill="#9ece6a">  Applying admin.0001_initial... OK</text>
+    <!-- Prompt 6 -->
+    <text x="100" y="920" fill="#7aa2f7">➜</text><text x="120" y="920" fill="#9ece6a"> project</text><text x="185" y="920" fill="#7aa2f7"> git:(</text><text x="230" y="920" fill="#f7768e">main</text><text x="265" y="920" fill="#7aa2f7">)</text><text x="280" y="920" fill="#c0caf5"> ✗ vim README.md</text>
+  </g>
+</svg>
