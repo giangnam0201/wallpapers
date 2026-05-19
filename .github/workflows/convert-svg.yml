@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install dependencies
         run: |
@@ -67,3 +69,60 @@ jobs:
           git add png/ jpeg/
           git diff --staged --quiet || git commit -m "Auto-convert SVG wallpapers to PNG/JPEG"
           git push
+
+      - name: Create release archives
+        run: |
+          # Count wallpapers for release tag
+          COUNT=$(ls svg/*.svg | wc -l)
+          echo "WALLPAPER_COUNT=$COUNT" >> $GITHUB_ENV
+
+          # Create zip archives for release
+          zip -r wallpapers-svg.zip svg/
+          zip -r wallpapers-png-1080p.zip png/1920x1080/
+          zip -r wallpapers-png-1440p.zip png/2560x1440/
+          zip -r wallpapers-png-4k.zip png/3840x2160/
+          zip -r wallpapers-jpeg-1080p.zip jpeg/1920x1080/
+          zip -r wallpapers-jpeg-1440p.zip jpeg/2560x1440/
+          zip -r wallpapers-jpeg-4k.zip jpeg/3840x2160/
+
+      - name: Get current date
+        run: echo "RELEASE_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Create or update GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ github.run_number }}
+          name: "Wallpapers Build #${{ github.run_number }} (${{ env.RELEASE_DATE }})"
+          body: |
+            ## Dark & Coding Theme Wallpapers
+
+            **${{ env.WALLPAPER_COUNT }} wallpapers** in multiple formats and resolutions.
+
+            ### Downloads
+
+            | Format | Resolution | File |
+            |--------|-----------|------|
+            | SVG | Scalable | `wallpapers-svg.zip` |
+            | PNG | 1920x1080 | `wallpapers-png-1080p.zip` |
+            | PNG | 2560x1440 | `wallpapers-png-1440p.zip` |
+            | PNG | 3840x2160 | `wallpapers-png-4k.zip` |
+            | JPEG | 1920x1080 | `wallpapers-jpeg-1080p.zip` |
+            | JPEG | 2560x1440 | `wallpapers-jpeg-1440p.zip` |
+            | JPEG | 3840x2160 | `wallpapers-jpeg-4k.zip` |
+
+            ### Themes
+            Dark backgrounds, coding/dev tools, geometric patterns, space, cyberpunk, gradients, and more.
+
+            ---
+            *Auto-generated from commit ${{ github.sha }}*
+          files: |
+            wallpapers-svg.zip
+            wallpapers-png-1080p.zip
+            wallpapers-png-1440p.zip
+            wallpapers-png-4k.zip
+            wallpapers-jpeg-1080p.zip
+            wallpapers-jpeg-1440p.zip
+            wallpapers-jpeg-4k.zip
+          make_latest: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

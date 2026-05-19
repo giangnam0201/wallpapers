@@ -31,7 +31,7 @@
     <text x="1200" y="500" opacity="0.4">const [state, dispatch] = useReducer</text>
     <text x="1200" y="630" opacity="0.3">channel.publish('events', msg)</text>
     <text x="1200" y="760" opacity="0.5">COPY --from=build /app /app</text>
-    <text x="1200" y="880" opacity="0.2">nginx -t && nginx -s reload</text>
+    <text x="1200" y="880" opacity="0.2">nginx -t &amp;&amp; nginx -s reload</text>
     <text x="1200" y="1010" opacity="0.4">go run ./cmd/server/main.go</text>
     <text x="1600" y="60" opacity="0.4">throw new HttpException(404)</text>
     <text x="1600" y="180" opacity="0.2">match self.state {</text>
